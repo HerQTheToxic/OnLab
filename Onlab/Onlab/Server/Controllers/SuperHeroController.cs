@@ -6,6 +6,7 @@ namespace Onlab.Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //Itt szamit a nev
     public class SuperHeroController : ControllerBase
     {
         public static List<Comic> comics = new List<Comic> { 

@@ -1,3 +1,5 @@
+global using Onlab.Shared;
+global using Onlab.Client.Services.SuperHeroService;
 using Onlab.Client;
 using Onlab.Client.Services.SuperHeroService;
 using Microsoft.AspNetCore.Components.Web;

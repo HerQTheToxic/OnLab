@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onlab.Server", "Onlab\Server\Onlab.Server.csproj", "{CA720145-DEDC-40EB-AD4D-49DDB94DB3F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onlab.Server", "Onlab\Server\Onlab.Server.csproj", "{CA720145-DEDC-40EB-AD4D-49DDB94DB3F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onlab.Client", "Onlab\Client\Onlab.Client.csproj", "{9A3C703E-2910-45EF-973B-62A05AFCAF95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onlab.Client", "Onlab\Client\Onlab.Client.csproj", "{9A3C703E-2910-45EF-973B-62A05AFCAF95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Onlab.Shared", "Onlab\Shared\Onlab.Shared.csproj", "{7653B229-1661-42AA-BC4B-1B69938C8DF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Onlab.Shared", "Onlab\Shared\Onlab.Shared.csproj", "{7653B229-1661-42AA-BC4B-1B69938C8DF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
