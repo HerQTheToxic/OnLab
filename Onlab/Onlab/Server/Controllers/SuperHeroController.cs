@@ -9,34 +9,33 @@ namespace Onlab.Server.Controllers
     //Itt szamit a nev
     public class SuperHeroController : ControllerBase
     {
-        public static List<Comic> comics = new List<Comic> { 
-            new Comic {Id =1, Name ="Marvel"},
-            new Comic {Id =2, Name ="DC"}
+        private readonly DataContext _context;
 
-        };
-
-        public static List<SuperHero> heroes = new List<SuperHero> {
-            new SuperHero {Id =1, FirstName ="Peter", LastName="Parker", HeroName="Spiderman", Comic=comics[0],ComicId=1},
-            new SuperHero {Id =2, FirstName ="Bruce", LastName="Wayne", HeroName="Batman", Comic=comics[1], ComicId = 2}
-
-        };
+        public SuperHeroController(DataContext context)
+        {
+            _context = context;
+        }
 
         [HttpGet]
         public async Task<ActionResult<List<SuperHero>>> GetSuperHeroes()
         {
+            var heroes = await _context.SuperHeroes.Include(sh=>sh.Comic).ToListAsync();
             return Ok(heroes);
         }
 
         [HttpGet("comics")]
         public async Task<ActionResult<List<Comic>>> GetComics()
         {
+            var comics = await _context.Comics.ToListAsync();
             return Ok(comics);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<SuperHero>> GetSingleHero(int id)
         {
-            var hero= heroes.FirstOrDefault(h => h.Id == id);
+            var hero= await _context.SuperHeroes
+                .Include(h =>h.Comic) //kell, vagy null lenne a comic
+                .FirstOrDefaultAsync(h => h.Id == id);
             if(hero == null)
             {
                 return NotFound("Sorry, no hero here. :/");

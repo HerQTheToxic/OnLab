@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-
-namespace Onlab.Server.Data
+﻿namespace Onlab.Server.Data
 {
     public class DataContext : DbContext
     {
