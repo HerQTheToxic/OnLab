@@ -196,15 +196,15 @@
       "mscorlib.dll": "sha256-c1dVVfosFaf5aiS3brr2amBi1Ue0kg6mqECzmCbGyfA=",
       "netstandard.dll": "sha256-+9Yr\/gSP3tCZAMbOdAcGhHGuMcyg\/AaxVKtt3tGsvao=",
       "System.Private.CoreLib.dll": "sha256-SnxOe5QK250duVAQOw0iWr1sODhUuVEUykExQyQ\/WSk=",
-      "Onlab.Shared.dll": "sha256-j3wSLdoMd1Wv+eZueuJSI9MsoREaSIArrf2dE2HTcc8=",
-      "Onlab.Client.dll": "sha256-8PYcb3575kcmz1IOmM6vO95TKu3SK8xDhGPTG5dcTqw="
+      "Onlab.Shared.dll": "sha256-xDeTtsWwoKaNMWq+wfflGTL4yZ0euS2Iv2egWBL0dR0=",
+      "Onlab.Client.dll": "sha256-6rhXOp7qF3ywl9zORi4tzsIqLIW63F4lmWcy+QywdJU="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Onlab.Shared.pdb": "sha256-ixHH+f38fzLsGjDZ3bVju7IuL5T41eTA9LhIIOWN\/eE=",
-      "Onlab.Client.pdb": "sha256-K2Z5KaUv99RoMoRYOH3Tf4Mk2KZ4jz3MrlSl8q\/u12A="
+      "Onlab.Shared.pdb": "sha256-ebbR7ce1qwmdcoLvsXrVWeuIW3tdaoh+ZPN0OcI6ecQ=",
+      "Onlab.Client.pdb": "sha256-folrsFBBLT2xH2y5TqOvopjU1fItz6vPeHe6Fq+1C9o="
     },
     "runtime": {
       "dotnet.6.0.2.jg2n21jeq8.js": "sha256-wbTVn69TU0+WI83iB+kky8tf\/BjZdYJeM0rUP96ur\/c=",

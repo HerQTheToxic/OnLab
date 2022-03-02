@@ -30,7 +30,7 @@ else
         <InputSelect @bind-Value="hero.ComicId" class="form-select">
             @foreach (var comic in SuperHeroService.Comics)
            {
-               <option value="comic.Id">@comic.Name</option>
+               <option value="@comic.Id">@comic.Name</option>
            }
         </InputSelect>
     </div>
