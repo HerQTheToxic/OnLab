@@ -9,6 +9,7 @@ namespace Onlab.Server.Controllers
     //Itt szamit a nev
     public class SuperHeroController : ControllerBase
     {
+        //adatbazis tartalma
         private readonly DataContext _context;
 
         public SuperHeroController(DataContext context)
@@ -42,5 +43,64 @@ namespace Onlab.Server.Controllers
             }
             return Ok(hero);
         }
+
+        //hozzaad
+        [HttpPost]
+        public async Task<ActionResult<List<SuperHero>>> CreateSuperHero(SuperHero hero)
+        {
+            hero.Comic = null;
+            _context.SuperHeroes.Add(hero);
+            await _context.SaveChangesAsync();
+
+            return Ok(await GetDbHeroes());
+        }
+
+        //valtoztat
+        [HttpPut("{id}")]
+        public async Task<ActionResult<List<SuperHero>>> UpdateSuperHero(SuperHero hero, int id)
+        {
+            var dbHero = await _context.SuperHeroes
+                .Include(h => h.Comic)
+                .FirstOrDefaultAsync(s=>s.Id==id);
+            if(dbHero == null)
+            {
+                return NotFound("Sorry, but not found :/");
+            }
+            dbHero.FirstName =hero.FirstName;
+            dbHero.LastName =hero.LastName;
+            dbHero.HeroName =hero.HeroName;
+            dbHero.ComicId = hero.ComicId;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(await GetDbHeroes());
+        }
+
+
+        //torol
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<SuperHero>>> DeleteSuperHero(int id)
+        {
+            var dbHero = await _context.SuperHeroes
+                .Include(h => h.Comic)
+                .FirstOrDefaultAsync(s => s.Id == id);
+            if (dbHero == null)
+            {
+                return NotFound("Sorry, but not found :/");
+            }
+
+            _context.SuperHeroes.Remove(dbHero);
+            await _context.SaveChangesAsync();
+
+            return Ok(await GetDbHeroes());
+        }
+
+
+
+        private async Task<List<SuperHero>> GetDbHeroes()
+        {
+            return await _context.SuperHeroes.Include(sh => sh.Comic).ToListAsync();
+        }
+
     }
 }
