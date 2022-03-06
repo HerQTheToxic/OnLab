@@ -1,0 +1,52 @@
+﻿@page "/filmek"
+@inject IFilmService FilmService
+@inject NavigationManager NavigationManager
+@inject ITeremService TeremService
+
+<PageTitle>Filmek</PageTitle>
+
+<h3>Filmek</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Értékelés</th>
+            <th>Gyártó</th>
+            <th>Terem</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var film in FilmService.Filmek)
+       {
+           <tr>
+               <td>@film.Nev</td>
+               <td>@film.Ertekeles</td>
+               <td>@film.Gyarto</td>
+               <td> </td>
+               <td>
+                  <button class="btn btn-primary" @onclick="(()=>ShowFilm(film.Id))">Info</button>
+               </td>
+           </tr>
+           
+       }
+    </tbody>
+</table>
+
+
+
+
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await FilmService.GetFilmek();
+        await FilmService.GetSzineszek();
+    }
+
+    void ShowFilm(int id)
+    {
+        NavigationManager.NavigateTo($"film/{id}");    
+    }
+}

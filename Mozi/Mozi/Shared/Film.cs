@@ -12,9 +12,9 @@ namespace Mozi.Shared
         public string Nev { get; set; } = string.Empty;
         public double Ertekeles { get; set; } = 5.0;
         public string Gyarto { get; set; } = "Nincs adat";
-        public List<Szinesz> szineszek { get; set; }
-        public List<int> SzineszId { get; set; }= new List<int>();
-        public Terem? Terem { get; set; } //meg csak 1 terem
+        //public List<Szinesz> szineszek { get; set; }  //nem fog kelleni
+        //public List<int> SzineszId { get; set; }= new List<int>();
+        //public Terem? Terem { get; set; } //meg csak 1 terem, nem fog kelleni
         public int TeremId { get; set; }
     }
 }

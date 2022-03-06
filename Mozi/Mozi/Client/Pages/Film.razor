@@ -1,0 +1,79 @@
+﻿@page "/film"
+@page "/film/{id:int}"
+@inject IFilmService FilmService
+@inject NavigationManager NavigationManager
+
+@if (Id == null)
+{
+    <h3>Uj film</h3>
+}
+else
+{
+    <h3>A(z) @film.Nev adatai</h3>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Értékelés</th>
+            <th>Gyártó</th>
+            <th>Terem</th>
+        </tr>
+    </thead>
+    <tbody>
+              
+           <tr>
+               <td>@film.Nev</td>
+               <td>@film.Ertekeles</td>
+               <td>@film.Gyarto</td>
+               <td>@film.TeremId</td>
+           </tr>
+           
+    </tbody>
+</table>
+
+<h3>Szineszek adatai</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Kor</th>
+            <th>Értékelés</th>
+            <th>Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+
+<button class="btn btn-primary" @onclick="(()=>ShowFilmek(film.Id))">Vissza</button>
+
+
+@code {
+    [Parameter]
+    public int? Id{ get; set; }
+
+    Mozi.Shared.Film film=new Mozi.Shared.Film();
+    
+
+    
+    //Film film=new Film();
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if(Id!= null)
+        {
+            film = await FilmService.GetSingleFilm((int)Id);
+            //szineszeklista = film.szineszek;
+        }
+    }
+    void ShowFilmek(int id)
+    {
+        NavigationManager.NavigateTo("filmek");    
+    }
+
+
+}
