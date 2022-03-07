@@ -604,6 +604,9 @@
         }
       },
       "Mozi.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.2"
+        },
         "runtime": {
           "Mozi.Shared.dll": {}
         }

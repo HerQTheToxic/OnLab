@@ -10,3 +10,5 @@ C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shar
 C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\refint\Mozi.Shared.dll
 C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.pdb
 C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\ref\Mozi.Shared.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.runtimeconfig.json
+C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.genruntimeconfig.cache

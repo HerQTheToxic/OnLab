@@ -1,4 +1,6 @@
-﻿namespace Mozi.Client.Services.TeremService
+﻿using System.Net.Http.Json;
+
+namespace Mozi.Client.Services.TeremService
 {
     public class TeremService : ITeremService
     {
@@ -9,26 +11,20 @@
             _http = http;
         }
         public List<Terem> Termek { get ; set ; }= new List<Terem>();
-        public List<Szek> Szekek { get ; set ; }=new List<Szek>();
 
-        public Task<Szek> GetSingleSzek(int id)
+        public async Task<Terem> GetSingleTerem(int id)
         {
-            throw new NotImplementedException();
+            var result = await _http.GetFromJsonAsync<Terem>($"api/terem/{id}");
+            if (result != null)
+                return result;
+            throw new Exception("Nem található a terem");
         }
 
-        public Task<Terem> GetSingleTerem(int id)
+        public async Task GetTermek()
         {
-            throw new NotImplementedException();
-        }
-
-        public Task GetSzekek()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task GetTermek()
-        {
-            throw new NotImplementedException();
+            var result = await _http.GetFromJsonAsync<List<Terem>>("api/terem");
+            if (result != null)
+                Termek = result;
         }
     }
 }
