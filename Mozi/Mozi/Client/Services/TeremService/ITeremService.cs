@@ -6,6 +6,8 @@
 
         Task GetTermek();
         Task<Terem> GetSingleTerem(int id);
-
+        Task CreateTerem(Terem terem);
+        Task DeleteTerem(int id);
+        Task UpdateTerem(Terem terem);
     }
 }

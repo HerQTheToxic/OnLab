@@ -45,16 +45,11 @@ else
 
     Mozi.Shared.Film film=new Mozi.Shared.Film();
     
-
-    
-    //Film film=new Film();
-
     protected override async Task OnParametersSetAsync()
     {
         if(Id!= null)
         {
             film = await FilmService.GetSingleFilm((int)Id);
-            //szineszeklista = film.szineszek;
         }
     }
     void ShowFilmek()

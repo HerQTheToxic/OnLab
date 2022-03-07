@@ -12,6 +12,20 @@ namespace Mozi.Client.Services.TeremService
         }
         public List<Terem> Termek { get ; set ; }= new List<Terem>();
 
+        public async Task CreateTerem(Terem terem)
+        {
+            var result = await _http.PostAsJsonAsync("api/terem", terem);
+            var response = await result.Content.ReadFromJsonAsync<List<Terem>>();
+            Termek = response;
+        }
+
+        public async Task DeleteTerem(int id)
+        {
+            var result = await _http.DeleteAsync($"api/terem/{id}");
+            var response = await result.Content.ReadFromJsonAsync<List<Terem>>();
+            Termek = response;
+        }
+
         public async Task<Terem> GetSingleTerem(int id)
         {
             var result = await _http.GetFromJsonAsync<Terem>($"api/terem/{id}");
@@ -25,6 +39,13 @@ namespace Mozi.Client.Services.TeremService
             var result = await _http.GetFromJsonAsync<List<Terem>>("api/terem");
             if (result != null)
                 Termek = result;
+        }
+
+        public async Task UpdateTerem(Terem terem)
+        {
+            var result = await _http.PutAsJsonAsync($"api/film/{terem.Id}", terem);
+            var response = await result.Content.ReadFromJsonAsync<List<Terem>>();
+            Termek = response;
         }
     }
 }
