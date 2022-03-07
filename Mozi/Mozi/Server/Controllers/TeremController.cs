@@ -31,6 +31,15 @@ namespace Mozi.Server.Controllers
             }
             return Ok(terem);
         }
+
+        //Teremben lévő székek
+        [HttpGet("{id}/szekek")]
+        public async Task<ActionResult<Szek>> GetTeremSzekek(int id)
+        {
+            var szekek = await _context.Szekek.Where(h => h.TeremId == id).ToListAsync();
+            return Ok(szekek);
+        }
+
         //Letrehoz
         [HttpPost]
         public async Task<ActionResult<List<Terem>>> CreateTerem(Terem terem)

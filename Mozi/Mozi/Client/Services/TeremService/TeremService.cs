@@ -11,6 +11,7 @@ namespace Mozi.Client.Services.TeremService
             _http = http;
         }
         public List<Terem> Termek { get ; set ; }= new List<Terem>();
+        public List<Szek> Szekek { get ; set ; }=new List<Szek>();
 
         public async Task CreateTerem(Terem terem)
         {
@@ -32,6 +33,13 @@ namespace Mozi.Client.Services.TeremService
             if (result != null)
                 return result;
             throw new Exception("Nem található a terem");
+        }
+
+        public async Task GetTeremSzekek(int id)
+        {
+            var result = await _http.GetFromJsonAsync<List<Szek>>($"api/terem/{id}/szekek");
+            if (result != null)
+                Szekek = result;
         }
 
         public async Task GetTermek()

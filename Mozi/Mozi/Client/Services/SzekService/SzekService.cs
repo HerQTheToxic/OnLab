@@ -42,6 +42,13 @@ namespace Mozi.Client.Services.SzekService
                 Szekek = result;
         }
 
+        /*public async Task GetSzekekTeremben(int id)
+        {
+            var result = await _http.GetFromJsonAsync<List<Szek>>($"api/szek/terem/{id}");
+            if (result != null)
+                Szekek = result;
+        }*/
+
         public async Task UpdateSzek(Szek szek)
         {
             var result = await _http.PutAsJsonAsync($"api/szek/{szek.Id}", szek);
