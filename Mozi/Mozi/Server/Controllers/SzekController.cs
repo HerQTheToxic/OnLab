@@ -32,6 +32,50 @@ namespace Mozi.Server.Controllers
             }
             return Ok(szekek);
         }
+        //Letrehoz
+        [HttpPost]
+        public async Task<ActionResult<List<Szek>>> CreateSzek(Szek Szek)
+        {
+            _context.Szekek.Add(Szek);
+            await _context.SaveChangesAsync();
+
+            return Ok(await GetDbSzek());
+        }
+        //Frissit
+        [HttpPut("{id}")]
+        public async Task<ActionResult<List<Szek>>> UpdateSzek(Szek Szek, int id)
+        {
+            var dbSzek = await _context.Szekek.FirstOrDefaultAsync(h => h.Id == id);
+            if (dbSzek == null)
+                return NotFound("Bocsi, nincs ilyen Szek");
+            dbSzek.Szam = Szek.Szam;
+            dbSzek.Foglalt = Szek.Foglalt;
+            dbSzek.TeremId = Szek.TeremId;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(await GetDbSzek());
+        }
+
+        //Torol
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<Szek>>> DeleteSzek(int id)
+        {
+            var dbSzek = await _context.Szekek.FirstOrDefaultAsync(h => h.Id == id);
+            if (dbSzek == null)
+                return NotFound("Bocsi, nincs ilyen Szek");
+
+            _context.Szekek.Remove(dbSzek);
+            await _context.SaveChangesAsync();
+
+            return Ok(await GetDbSzek());
+        }
+
+
+        private async Task<List<Szek>> GetDbSzek()
+        {
+            return await _context.Szekek.ToListAsync();
+        }
 
     }
 }

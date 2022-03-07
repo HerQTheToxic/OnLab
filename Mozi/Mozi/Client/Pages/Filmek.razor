@@ -53,7 +53,7 @@
                <td>@szek.Szam</td>
                <td>@szek.Foglalt</td>
 
-               <td> </td>
+               <td><button class="btn btn-primary" @onclick="(()=>ShowSzek(szek.Id))">Info</button> </td>
                <td>
                  
                </td>
@@ -84,7 +84,7 @@
                <td>@szinesz.FilmId</td>
 
 
-               <td> </td>
+               <td><button class="btn btn-primary" @onclick="(()=>ShowSzinesz(szinesz.Id))">Info</button> </td>
                <td>
                  
                </td>
@@ -111,7 +111,7 @@
                <td>@terem.TeremNev</td>
                <td>@terem.Id</td>
                <td>@terem.FilmId</td>
-               <td> </td>
+               <td> <button class="btn btn-primary" @onclick="(()=>ShowTerem(terem.Id))">Info</button></td>
                <td>                
                </td>
            </tr>     
@@ -133,5 +133,17 @@
     void ShowFilm(int id)
     {
         NavigationManager.NavigateTo($"film/{id}");    
+    }
+    void ShowSzinesz(int id)
+    {
+        NavigationManager.NavigateTo($"szinesz/{id}");    
+    }
+    void ShowSzek(int id)
+    {
+        NavigationManager.NavigateTo($"szek/{id}");    
+    }
+    void ShowTerem(int id)
+    {
+        NavigationManager.NavigateTo($"terem/{id}");    
     }
 }

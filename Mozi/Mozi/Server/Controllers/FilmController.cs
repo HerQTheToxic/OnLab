@@ -34,5 +34,51 @@ namespace Mozi.Server.Controllers
             return Ok(film);
         }
 
+        //Letrehoz
+        [HttpPost]
+        public async Task<ActionResult<List<Film>>> CreateFilm(Film film)
+        {
+            _context.Filmek.Add(film);
+            await _context.SaveChangesAsync();
+
+            return Ok(await GetDbFilm());
+        }
+
+        //Frissit
+        [HttpPut("{id}")]
+        public async Task<ActionResult<List<Film>>> UpdateFilm(Film film, int id)
+        {
+            var dbFilm = await _context.Filmek.FirstOrDefaultAsync(h => h.Id == id);
+            if (dbFilm == null)
+                return NotFound("Bocsi, nincs ilyen film");
+            dbFilm.TeremId = film.TeremId;
+            dbFilm.Nev = film.Nev;
+            dbFilm.Ertekeles = film.Ertekeles;
+            dbFilm.Gyarto = film.Gyarto;
+
+
+            await _context.SaveChangesAsync();
+
+            return Ok(await GetDbFilm());
+        }
+
+        //Torol
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<Film>>> DeleteFilm(int id)
+        {
+            var dbFilm = await _context.Filmek.FirstOrDefaultAsync(h => h.Id == id);
+            if (dbFilm == null)
+                return NotFound("Bocsi, nincs ilyen film");
+
+            _context.Filmek.Remove(dbFilm);
+            await _context.SaveChangesAsync();
+
+            return Ok(await GetDbFilm());
+        }
+
+        private async Task<List<Film>> GetDbFilm()
+        {
+            return await _context.Filmek.ToListAsync();
+        }
     }
 }

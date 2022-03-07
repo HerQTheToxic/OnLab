@@ -1,15 +1,15 @@
-﻿@page "/film"
-@page "/film/{id:int}"
-@inject IFilmService FilmService
+﻿@page "/szinesz"
+@page "/szinesz/{id:int}"
+@inject ISzineszService SzineszService
 @inject NavigationManager NavigationManager
 
 @if (Id == null)
 {
-    <h3>Uj film</h3>
+    <h3>Uj Szinesz</h3>
 }
 else
 {
-    <h3>A(z) @film.Nev adatai</h3>
+    <h3>A(z) @szinesz.Nev adatai</h3>
 }
 
 <table class="table">
@@ -17,17 +17,18 @@ else
         <tr>
             <th>Név</th>
             <th>Értékelés</th>
-            <th>Gyártó</th>
-            <th>Terem</th>
+            <th>Kor</th>
+            <th>FilmId</th>
         </tr>
     </thead>
     <tbody>
               
            <tr>
-               <td>@film.Nev</td>
-               <td>@film.Ertekeles</td>
-               <td>@film.Gyarto</td>
-               <td>@film.TeremId</td>
+               <td>@szinesz.Nev</td>
+               <td>@szinesz.Ertekeles</td>
+               <td>@szinesz.Kor</td>
+               <td>@szinesz.FilmId</td>
+
            </tr>
            
     </tbody>
@@ -43,18 +44,15 @@ else
     [Parameter]
     public int? Id{ get; set; }
 
-    Mozi.Shared.Film film=new Mozi.Shared.Film();
+    Mozi.Shared.Szinesz szinesz=new Mozi.Shared.Szinesz();
     
-
-    
-    //Film film=new Film();
 
     protected override async Task OnParametersSetAsync()
     {
         if(Id!= null)
         {
-            film = await FilmService.GetSingleFilm((int)Id);
-            //szineszeklista = film.szineszek;
+            szinesz = await SzineszService.GetSingleSzinesz((int)Id);
+
         }
     }
     void ShowFilmek()

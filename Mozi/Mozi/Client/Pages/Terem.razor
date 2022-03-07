@@ -1,33 +1,31 @@
-﻿@page "/film"
-@page "/film/{id:int}"
-@inject IFilmService FilmService
+﻿@page "/terem"
+@page "/terem/{id:int}"
+@inject ITeremService TeremService
 @inject NavigationManager NavigationManager
 
 @if (Id == null)
 {
-    <h3>Uj film</h3>
+    <h3>Uj terem</h3>
 }
 else
 {
-    <h3>A(z) @film.Nev adatai</h3>
+    <h3>A(z) @terem.TeremNev adatai</h3>
 }
 
 <table class="table">
     <thead>
         <tr>
-            <th>Név</th>
-            <th>Értékelés</th>
-            <th>Gyártó</th>
-            <th>Terem</th>
+            <th>Nev</th>
+            <th>FilmId</th>
+            <th>id</th>
         </tr>
     </thead>
     <tbody>
               
            <tr>
-               <td>@film.Nev</td>
-               <td>@film.Ertekeles</td>
-               <td>@film.Gyarto</td>
-               <td>@film.TeremId</td>
+               <td>@terem.TeremNev</td>
+               <td>@terem.FilmId</td>
+               <td>@terem.Id</td>
            </tr>
            
     </tbody>
@@ -43,18 +41,15 @@ else
     [Parameter]
     public int? Id{ get; set; }
 
-    Mozi.Shared.Film film=new Mozi.Shared.Film();
+    Mozi.Shared.Terem terem=new Mozi.Shared.Terem();
     
-
-    
-    //Film film=new Film();
 
     protected override async Task OnParametersSetAsync()
     {
         if(Id!= null)
         {
-            film = await FilmService.GetSingleFilm((int)Id);
-            //szineszeklista = film.szineszek;
+            terem = await TeremService.GetSingleTerem((int)Id);
+
         }
     }
     void ShowFilmek()
