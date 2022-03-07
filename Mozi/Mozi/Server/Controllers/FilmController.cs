@@ -34,6 +34,22 @@ namespace Mozi.Server.Controllers
             return Ok(film);
         }
 
+        [HttpGet("{id}/termek")]
+        public async Task<ActionResult<Terem>> GetFilmTermek(int id)
+        {
+            var termek = await _context.Termek.Where(h=>h.FilmId==id).ToListAsync();
+            return Ok(termek);
+        }
+
+        [HttpGet("{id}/szineszek")]
+        public async Task<ActionResult<Szinesz>> GetFilmSzineszek(int id)
+        {
+            var termek = await _context.Szineszek.Where(h => h.FilmId == id).ToListAsync();
+            return Ok(termek);
+        }
+
+
+
         //Letrehoz
         [HttpPost]
         public async Task<ActionResult<List<Film>>> CreateFilm(Film film)

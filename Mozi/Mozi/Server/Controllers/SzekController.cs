@@ -32,21 +32,6 @@ namespace Mozi.Server.Controllers
             return Ok(szekek);
         }
 
-
-        /*[HttpGet("{teremId}/szekek")] 
-        public async Task<ActionResult<Szek>> GetSzekekTeremben(int teremId)
-        {
-            var szekek = await _context.Szekek.Where(h => h.TeremId== teremId).ToListAsync();
-            if(szekek == null)
-            {
-                return NotFound("Nincsenek itt a szekek");
-            }
-            return Ok(szekek);
-        }*/
-
-
-
-
         //Letrehoz
         [HttpPost]
         public async Task<ActionResult<List<Szek>>> CreateSzek(Szek Szek)

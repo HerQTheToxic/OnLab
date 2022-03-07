@@ -11,6 +11,8 @@ namespace Mozi.Client.Services.FilmService
             _http = http;
         }
         public List<Film> Filmek { get ; set ;} =new List<Film> ();
+        public List<Terem> Termek { get ; set; }
+        public List<Szinesz> Szineszek { get ; set; }
 
         public async Task CreateFilm(Film film)
         {
@@ -31,6 +33,20 @@ namespace Mozi.Client.Services.FilmService
             var result = await _http.GetFromJsonAsync<List<Film>>("api/film");
             if(result != null)
                 Filmek = result;
+        }
+
+        public async Task GetFilmSzineszek(int id)
+        {
+            var result = await _http.GetFromJsonAsync<List<Szinesz>>($"api/film/{id}/szineszek");
+            if (result != null)
+                Szineszek = result;
+        }
+
+        public async Task GetFilmTermek(int id)
+        {
+            var result = await _http.GetFromJsonAsync<List<Terem>>($"api/film/{id}/termek");
+            if (result != null)
+                Termek = result;
         }
 
         public async Task<Film> GetSingleFilm(int id)

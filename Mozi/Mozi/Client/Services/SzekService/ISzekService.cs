@@ -8,6 +8,6 @@
         Task CreateSzek(Szek szek);
         Task DeleteSzek(int id);
         Task UpdateSzek(Szek szek);
-        //Task GetSzekekTeremben(int id);
+
     }
 }
