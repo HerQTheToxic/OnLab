@@ -58,6 +58,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "Syncfusion.Blazor": {
+              "target": "Package",
+              "version": "[19.4.0.55, )"
             }
           },
           "imports": [
@@ -135,6 +139,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "Syncfusion.Blazor": {
+              "target": "Package",
+              "version": "[19.4.0.55, )"
             }
           },
           "imports": [
