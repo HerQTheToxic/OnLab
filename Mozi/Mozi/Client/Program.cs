@@ -4,6 +4,9 @@ global using Mozi.Client.Services.SzekService;
 global using Mozi.Client.Services.SzineszService;
 global using Mozi.Shared;
 global using Syncfusion.Blazor;
+
+
+
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Mozi.Client;
