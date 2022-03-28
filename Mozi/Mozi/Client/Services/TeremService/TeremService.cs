@@ -42,6 +42,8 @@ namespace Mozi.Client.Services.TeremService
             var result = await _http.GetFromJsonAsync<List<Szek>>($"api/terem/{id}/szekek");
             if (result != null)
             {
+                FoglaltSzekek = new List<Szek>();
+                UresSzekek = new List<Szek>();
                 Szekek = result;
                 foreach (var szek in result)
                 {

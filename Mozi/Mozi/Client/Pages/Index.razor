@@ -1,50 +1,6 @@
 ﻿@page "/"
 
-@using Syncfusion.Blazor.Buttons
-@using Syncfusion.Blazor.Lists
-@inject NavigationManager NavigationManager
-@inject ISzekService SzekService
-@inject ITeremService TeremService
 
-
-<SfChart>
-   <ChartPrimaryXAxis ValueType="Syncfusion.Blazor.Charts.ValueType.Category">
-
-    </ChartPrimaryXAxis>
-    
-
-    <ChartSeriesCollection>
-        <ChartSeries Type="ChartSeriesType.Column" DataSource="@Termek"
-        XName="milyen" YName="db">
-        </ChartSeries>
-    </ChartSeriesCollection>
-</SfChart>
-
-
-@code {
-    public List<Terem> Termek = new List<Terem>();
-
-
-    protected override async Task OnInitializedAsync()
-    {
-        await SzekService.GetSzekek();
-        await TeremService.GetTeremSzekek(1);
-        int Foglalt = TeremService.FoglaltSzekek.Count();
-        int Ures = TeremService.UresSzekek.Count();
-        Termek = new List<Terem>
-        {
-            new Terem{milyen="Foglalt Szekek", db=Foglalt},
-            new Terem{milyen="Ures Szekek", db=Ures},
-        };
-
-    }
-    public class Terem
-    {
-        public String milyen{ get; set; }
-        public int db{ get; set; }
-    }
-
-}
 
 <!--<PageTitle>Index</PageTitle>
 

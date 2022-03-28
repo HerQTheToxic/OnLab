@@ -26,6 +26,7 @@ else
                <td>@terem.TeremNev</td>
                <td>@terem.FilmId</td>
                <td>@terem.Id</td>
+               
            </tr>
            
     </tbody>
@@ -35,6 +36,7 @@ else
 
 
 <button class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</button>
+<button class="btn btn-primary" @onclick="(()=>ShowSzekek(terem.Id))">Terem fogalaltsága</button>
 
 
 @code {
@@ -56,6 +58,11 @@ else
     {
         NavigationManager.NavigateTo("filmek");    
     }
+    void ShowSzekek(int id)
+    {
+        NavigationManager.NavigateTo($"terem/{id}/szekek");    
+    }
+
 
 
 }
