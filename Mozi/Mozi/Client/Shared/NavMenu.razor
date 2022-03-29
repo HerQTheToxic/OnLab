@@ -1,15 +1,53 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Mozi</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+﻿@inherits LayoutComponentBase
+@using Syncfusion.Blazor.Buttons;
+
+@using Syncfusion.Blazor.Lists;
+
+<div id="header" style="width: 100%">
+
+        <span style="float: left;position: fixed; font-size: 25px">
+            <SfButton CssClass="custom-button" IconCss="e-icons e-menu"
+                        @onclick="MenuButtonClick"> </SfButton>
+        </span>
+
+        <!--<span  style="font-size: 25px ;position: fixed;" ></span>-->
+    
+
+
+    <SfSidebar Width="250px" Position="SidebarPosition.Left" @bind-IsOpen="Nyitva">
+        <ChildContent>
+            
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    <span class="oi oi-home" aria-hidden="true"></span> Home
+                </NavLink>
+             </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="counter">
+                    <span class="oi oi-plus" aria-hidden="true"></span> Counter
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="fetchdata">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="filmek">
+                    <span class="iconify" data-icon="bx:camera-movie" data-width="30" data-height="30"></span> Filmek
+                </NavLink>
+            </div>      
+        </ChildContent>
+
+    </SfSidebar>
+
+
 </div>
 
 
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+
+<!--<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
@@ -33,17 +71,79 @@
         </div>
     </nav>
 </div>
-
+-->
 
 @code {
     
-    private bool collapseNavMenu = true;
+    public bool Nyitva;
+    public void MenuButtonClick()
+    {
+        Nyitva = !Nyitva;
+    }
+
+    public string HeaderText = "Header";
+    public string MainContent = "Main Content";
+
+    <!-- regi-->
+
+    <!--private bool collapseNavMenu = true;
      
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
-    }
+    }-->
     
 }
+
+<style>
+
+    .custom-button {
+        color: white !important;
+        font-size: 20px !important;
+        background-color: midnightblue !important;
+        border-color: midnightblue !important;
+    }
+
+    #header {
+        text-align: center;
+        color: black;
+        background-color: midnightblue;
+        line-height: 51px;
+    }
+
+    #egyhelybe{
+        position="fixed";
+    }
+
+    .main-text-content {
+        font-size: 18px;
+        text-align: left;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+
+  /*  .text-content {
+        font-size: 25px;
+        text-align: center;
+        padding-top: 50px;
+    }*/
+
+    .e-sidebar {
+        background-color: #f8f8f8;
+        color: black;
+    }
+
+        .e-sidebar.e-left {
+            top: 55px;
+        }
+
+        .e-sidebar.e-right {
+            top: 55px;
+        }
+
+    .main > div {
+        padding: 0px !important;
+    }
+</style>
