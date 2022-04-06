@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Rhgx9N8m1x2wgulDRRoyB2CrgpCOMovpP/bdIEZfWB8=",
+  "Hash": "IeW5Ud/q8YGIuL6qGCF2dBtwm+P2YdCMY2Vo+C2sUPQ=",
   "Source": "Mozi.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -9348,6 +9348,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\Mozi\\Mozi\\Client\\wwwroot\\script.js",
+      "SourceId": "Mozi.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\Mozi\\Mozi\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\script.js"
     }
   ]
 }

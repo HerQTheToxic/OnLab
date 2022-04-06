@@ -209,14 +209,14 @@
       "netstandard.dll": "sha256-+9Yr\/gSP3tCZAMbOdAcGhHGuMcyg\/AaxVKtt3tGsvao=",
       "System.Private.CoreLib.dll": "sha256-SnxOe5QK250duVAQOw0iWr1sODhUuVEUykExQyQ\/WSk=",
       "Mozi.Shared.dll": "sha256-lLpQpFCDFEwOfGvDs0yBfDDWk8HMo9xcY1xUXfCiOgU=",
-      "Mozi.Client.dll": "sha256-VAoUH39\/xh9ah35zpxvBTiewuHF7q6Ez79kRPbHopWc="
+      "Mozi.Client.dll": "sha256-OSu0Em5yf\/WdOuYLa5EnnNPEWlCMECFjeXmXe2968b0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "Mozi.Shared.pdb": "sha256-vqciZh4MbYa\/YHL3tR70VtPYDzzU5WNZSi6J4ZE3xng=",
-      "Mozi.Client.pdb": "sha256-Qm2OuJ2Su8ijof\/UA9q42SCZU9+jmaMpPecQ\/JX4TH0="
+      "Mozi.Client.pdb": "sha256-RITgOs62F+wnCuDUX47pAnDpIR+I4n5\/kFq9A+twmtk="
     },
     "runtime": {
       "dotnet.6.0.2.jg2n21jeq8.js": "sha256-wbTVn69TU0+WI83iB+kky8tf\/BjZdYJeM0rUP96ur\/c=",
