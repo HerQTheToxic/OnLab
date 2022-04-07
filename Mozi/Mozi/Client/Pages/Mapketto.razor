@@ -1,7 +1,9 @@
 ﻿@page "/mapketto"
 @using Syncfusion.Blazor.Maps
 
-<SfMaps>
+<div class="padding">
+<SfMaps Height=800>
+
     @* To zoom and pan *@
     <MapsZoomSettings Enable="true">
         <MapsZoomToolbarSettings>
@@ -13,12 +15,14 @@
         <MapsLayer UrlTemplate="http://mt1.google.com/vt/lyrs=m@129&hl=en&x=tileX&y=tileY&z=level" TValue="string">
         </MapsLayer>
     </MapsLayers>
-</SfMaps>
+</SfMaps></div>
+
+
 
 
 <!-- masodik map navigációs ponttal-->
-
-<SfMaps>
+<div class="padding">
+<SfMaps Height=800>
     <MapsZoomSettings ZoomFactor="4"></MapsZoomSettings>
     <MapsCenterPosition Latitude="29.394708" Longitude="-94.954653"></MapsCenterPosition>
     <MapsLayers>
@@ -37,6 +41,7 @@
         </MapsLayer>
     </MapsLayers>
 </SfMaps>
+</div>
 
 @code{
     public class City
@@ -51,6 +56,12 @@
     };
 }
 
+<style>
+.padding {
+  padding-top: 20px;
+  padding-right: 300px;
+  padding-left: 300px;
+}
 
-
+</style>
 
