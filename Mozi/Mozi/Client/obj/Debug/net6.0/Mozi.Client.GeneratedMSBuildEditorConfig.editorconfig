@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/HerQ/Documents/GitHub/OnLab/Mozi/Mozi/Client/Pages/DatePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0ZVBpY2tlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/HerQ/Documents/GitHub/OnLab/Mozi/Mozi/Client/Pages/Dialog.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +60,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/HerQ/Documents/GitHub/OnLab/Mozi/Mozi/Client/Pages/Naptar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmFwdGFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/HerQ/Documents/GitHub/OnLab/Mozi/Mozi/Client/Pages/ProgressBar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZ3Jlc3NCYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/HerQ/Documents/GitHub/OnLab/Mozi/Mozi/Client/Pages/Scheduler.razor]
