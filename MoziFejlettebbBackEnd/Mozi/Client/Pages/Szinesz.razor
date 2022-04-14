@@ -1,0 +1,64 @@
+﻿@page "/szinesz"
+@page "/szinesz/{id:int}"
+@inject ISzineszService SzineszService
+@inject NavigationManager NavigationManager
+
+@if (Id == null)
+{
+    <h3>Uj Szinesz</h3>
+}
+else
+{
+    <h3>A(z) @szinesz.Nev adatai</h3>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Értékelés</th>
+            <th>Kor</th>
+            <th>FilmId</th>
+        </tr>
+    </thead>
+    <tbody>
+              
+           <tr>
+               <td>@szinesz.Nev</td>
+               <td>@szinesz.Ertekeles</td>
+               <td>@szinesz.Kor</td>
+               <td>@szinesz.FilmId</td>
+
+           </tr>
+           
+    </tbody>
+</table>
+
+
+
+
+<button class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</button>
+
+
+@code {
+    [Parameter]
+    public int? Id{ get; set; }
+
+    Mozi.Shared.Szinesz szinesz=new Mozi.Shared.Szinesz();
+    
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if(Id!= null)
+        {
+            szinesz = await SzineszService.GetSingleSzinesz((int)Id);
+
+        }
+    }
+    void ShowFilmek()
+    {
+        NavigationManager.NavigateTo("filmek");    
+    }
+
+
+}

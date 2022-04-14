@@ -1,0 +1,58 @@
+﻿@page "/progressbar"
+@using Syncfusion.Blazor.ProgressBar
+
+<div class="center">
+    <SfProgressBar 
+            Minimum="0"
+            Maximum="100"
+            Value="100"
+            Width="80%"
+            TrackColor="#D1F8C6"
+            ProgressColor="#3FFF33"
+            Type="ProgressType.Linear"
+            IsIndeterminate="true"
+            ShowProgressValue="true">
+            
+            <ProgressBarAnimation
+                Enable="true"
+                Duration="5000"
+                Delay="0"
+            ></ProgressBarAnimation>
+    </SfProgressBar>
+
+</div>
+<div class="center">
+        <SfProgressBar
+            Minimum="0"
+            Maximum="100"
+            Value="100"
+            Height="500px"
+            Width="500px"
+            TrackColor="#D1F8C6"
+            ProgressColor="#3FFF33"
+            Type="ProgressType.Circular"
+            SegmentCount="16"
+            ShowProgressValue="true">
+            <ProgressBarAnimation
+                Enable="true"
+                Duration="2000"
+                Delay="0"
+            ></ProgressBarAnimation>
+    </SfProgressBar>
+</div>
+
+
+
+
+@code {
+
+}
+
+<style>
+.center {
+    text-align: center
+}
+
+
+
+</style>

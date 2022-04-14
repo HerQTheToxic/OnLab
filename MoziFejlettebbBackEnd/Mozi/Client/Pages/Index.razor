@@ -1,0 +1,108 @@
+﻿@page "/"
+
+<!--@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Lists
+
+<div>
+    <div id="header" style="width: 100%">
+        <span style="float: left">
+            <SfButton CssClass="custom-button" IconCss="e-icons e-menu"
+                      @onclick="MenuButtonClick"> </SfButton>
+        </span>
+        <span style="float: left; font-size: 20px; padding-left: 10px">Language</span>
+        <span style="font-size: 25px">@HeaderText</span>
+    </div>
+    <SfSidebar Width="250px" Position="SidebarPosition.Left" @bind-IsOpen="ToggleSidebar"
+               MediaQuery="(min-width: 600px)" EnableDock="true" DockSize="80px" Type="SidebarType.Over">
+        <ChildContent>
+           <SfListView DataSource="@ListViewData">
+               <ListViewFieldSettings TValue="ListViewDataModel" Id="Id" Text="Text">
+               </ListViewFieldSettings>
+               <ListViewEvents TValue="ListViewDataModel" Clicked="OnSelect"></ListViewEvents>
+           </SfListView>
+        </ChildContent>
+    </SfSidebar>
+    <div class="main-text-content">@MainContent</div>
+</div>
+
+@code {
+
+    public void OnSelect(ClickEventArgs<ListViewDataModel> args) {
+
+        this.MainContent = args.ItemData.Description;
+
+    }
+
+    public class ListViewDataModel {
+
+        public string Id { get; set; }
+        public string Text { get; set; }
+        public string Description { get; set; }
+    }
+    List<ListViewDataModel> ListViewData = new List<ListViewDataModel>
+    {
+        new ListViewDataModel {Id="1", Text = "JavaScript", Description = "JavaScript (JS) is an interpreted computer programming language." },
+        new ListViewDataModel {Id="2", Text = "React", Description = "React is a declarative, efficient, and flexible JavaScript library for building user interfaces." },
+        new ListViewDataModel {Id="3", Text = "Vue", Description = "A progressive framework for building user interfaces." }
+    };
+
+    public bool ToggleSidebar;
+    public void MenuButtonClick() {
+
+        ToggleSidebar = !ToggleSidebar;
+    }
+
+    public string HeaderText = "Header";
+    public string MainContent = "Before getting into any programming language, one should have basic knowledge about HTML, CSS, and JavaScript.";
+
+}
+
+
+-->
+
+<style>
+
+   /* .custom-button {
+        color: white !important;
+        font-size: 20px !important;
+        background-color: midnightblue !important;
+        border-color: midnightblue !important;
+    }
+
+    #header {
+        text-align: center;
+        color: white;
+        background-color: midnightblue;
+        line-height: 51px;
+    }
+
+    .main-text-content {
+        font-size: 18px;
+        text-align: left;
+        padding-top: 50px;
+        padding-left: 30px;
+    }*/
+
+  /*  .text-content {
+        font-size: 25px;
+        text-align: center;
+        padding-top: 50px;
+    }*/
+
+    .e-sidebar {
+        background-color: #f8f8f8;
+        color: black;
+    }
+
+        .e-sidebar.e-left {
+            top: 55px;
+        }
+
+        .e-sidebar.e-right {
+            top: 55px;
+        }
+
+    .main > div {
+        padding: 0px !important;
+    }
+</style>

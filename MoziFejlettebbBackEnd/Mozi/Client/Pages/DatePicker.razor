@@ -1,0 +1,27 @@
+﻿@page "/datepicker"
+@using Syncfusion.Blazor.Calendars
+
+<!--Meg lehet mondani a formátumot-->
+
+<div id="wrapper">
+        <SfDatePicker TValue="DateTime?" Value="@DateValue"
+                Min="@StartValue"
+                Max="@EndValue"
+                Format="yyyy/MM-dd"  
+        
+                                        ></SfDatePicker>
+    </div>
+
+@code{
+    public DateTime DateValue { get; set; } = DateTime.Now;
+    public DateTime StartValue { get; set; } = new DateTime(2022, 01, 01);
+    public DateTime EndValue { get; set; } = new DateTime(2022, 12, 31);
+}
+
+<style>
+    #wrapper{
+        max-width: 245px;
+        margin: 0px auto;
+        padding-top: 20px;
+    }
+</style>

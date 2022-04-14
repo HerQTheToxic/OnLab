@@ -1,0 +1,66 @@
+﻿@page "/fetchdata"
+
+@using Syncfusion.Blazor.Buttons;
+@using Syncfusion.Blazor.Lists;
+
+<div>
+    <div id="header" style="width: 100%">
+        <span style="float: left">
+            <SfButton CssClass="custom-button" IconCss="e-icons e-menu"
+                      @onclick="MenuButtonClick"> </SfButton>
+        </span>
+
+        <span style="font-size: 25px">@HeaderText</span>
+    </div>
+
+    <SfSidebar Width="250px" Position="SidebarPosition.Left" @bind-IsOpen="Nyitva">
+        <ChildContent>
+            <SfListView DataSource="@ListViewData">
+                <ListViewFieldSettings TValue="ListViewDataModel" Id="Id" Text="Text">
+                    
+                </ListViewFieldSettings>
+                <ListViewEvents TValue="ListViewDataModel" Clicked="OnSelect"></ListViewEvents>
+            </SfListView>
+        </ChildContent>
+
+    </SfSidebar>
+
+
+    <div>@MainContent
+
+
+    </div>
+</div>
+
+@code{
+    public bool Nyitva;
+    public void MenuButtonClick()
+    {
+        Nyitva = !Nyitva;
+    }
+
+    public void OnSelect(ClickEventArgs<ListViewDataModel> args)
+    {
+        this.MainContent= args.ItemData.Description;
+    }
+
+    public string HeaderText = "Header";
+    public string MainContent = "Main Content";
+
+    public class ListViewDataModel
+    {
+        public string Id { get; set; }
+        public string Text{ get; set; }
+        public string Description { get; set; }
+    }
+
+    List<ListViewDataModel> ListViewData = new List<ListViewDataModel>
+    {
+        new ListViewDataModel {Id="1", Text = "JavaScript", Description = "JavaScript (JS) is an interpreted computer programming language." },
+        new ListViewDataModel {Id="2", Text = "React", Description = "React is a declarative, efficient, and flexible JavaScript library for building user interfaces." },
+        new ListViewDataModel {Id="3", Text = "Vue", Description = "A progressive framework for building user interfaces." }
+    };
+
+
+}
+

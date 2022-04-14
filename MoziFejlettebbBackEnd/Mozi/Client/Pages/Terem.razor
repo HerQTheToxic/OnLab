@@ -1,0 +1,68 @@
+﻿@page "/terem"
+@page "/terem/{id:int}"
+@inject ITeremService TeremService
+@inject NavigationManager NavigationManager
+
+@if (Id == null)
+{
+    <h3>Uj terem</h3>
+}
+else
+{
+    <h3>A(z) @terem.TeremNev adatai</h3>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nev</th>
+            <th>FilmId</th>
+            <th>id</th>
+        </tr>
+    </thead>
+    <tbody>
+              
+           <tr>
+               <td>@terem.TeremNev</td>
+               <td>@terem.FilmId</td>
+               <td>@terem.Id</td>
+               
+           </tr>
+           
+    </tbody>
+</table>
+
+
+
+
+<button class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</button>
+<button class="btn btn-primary" @onclick="(()=>ShowSzekek(terem.Id))">Terem fogalaltsága</button>
+
+
+@code {
+    [Parameter]
+    public int? Id{ get; set; }
+
+    Mozi.Shared.Terem terem=new Mozi.Shared.Terem();
+    
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if(Id!= null)
+        {
+            terem = await TeremService.GetSingleTerem((int)Id);
+
+        }
+    }
+    void ShowFilmek()
+    {
+        NavigationManager.NavigateTo("filmek");    
+    }
+    void ShowSzekek(int id)
+    {
+        NavigationManager.NavigateTo($"terem/{id}/szekek");    
+    }
+
+
+
+}
