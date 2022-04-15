@@ -3007,11 +3007,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Server\\Mozi.Server.csproj",
+      "projectUniqueName": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Server\\Mozi.Server.csproj",
       "projectName": "Mozi.Server",
-      "projectPath": "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Server\\Mozi.Server.csproj",
+      "projectPath": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Server\\Mozi.Server.csproj",
       "packagesPath": "C:\\Users\\HerQ\\.nuget\\packages\\",
-      "outputPath": "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Server\\obj\\",
+      "outputPath": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HerQ\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3028,11 +3028,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Client\\Mozi.Client.csproj": {
-              "projectPath": "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Client\\Mozi.Client.csproj"
+            "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Client\\Mozi.Client.csproj": {
+              "projectPath": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Client\\Mozi.Client.csproj"
             },
-            "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Shared\\Mozi.Shared.csproj": {
-              "projectPath": "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Shared\\Mozi.Shared.csproj"
+            "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Shared\\Mozi.Shared.csproj": {
+              "projectPath": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Shared\\Mozi.Shared.csproj"
             }
           }
         }

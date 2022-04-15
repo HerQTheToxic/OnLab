@@ -11,93 +11,93 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = Mozi.Client
 build_property.RootNamespace = Mozi.Client
-build_property.ProjectDir = E:\A A A A A NET UJ Backend\Mozi\Mozi\Client\
+build_property.ProjectDir = C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\A A A A A NET UJ Backend\Mozi\Mozi\Client
+build_property.MSBuildProjectDirectory = C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/App.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Counter.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/DatePicker.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/DatePicker.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0ZVBpY2tlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Dialog.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Dialog.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/FetchData.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Film.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Film.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Filmek.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Filmek.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsbWVrLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Index.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Map.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Map.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Mapketto.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Mapketto.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwa2V0dG8ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Naptar.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Naptar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmFwdGFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/ProgressBar.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/ProgressBar.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZ3Jlc3NCYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Scheduler.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Scheduler.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NoZWR1bGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Szek.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Szek.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3play5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Szinesz.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Szinesz.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ppbmVzei5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/Terem.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/Terem.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVyZW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Pages/TeremDiagram.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Pages/TeremDiagram.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVyZW1EaWFncmFtLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Shared/SurveyPrompt.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/_Imports.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Shared/MainLayout.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-9pjxd3yzio
 
-[E:/A A A A A NET UJ Backend/Mozi/Mozi/Client/Shared/NavMenu.razor]
+[C:/Users/HerQ/Documents/GitHub/OnLab/MoziFejlettebbBackEnd/Mozi/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-4ltky610x2

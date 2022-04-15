@@ -18,7 +18,7 @@ namespace Mozi.Server.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Film>>> GetFilmek()
         {
-            var filmek= await _context.Filmek.ToListAsync();
+            var filmek= await _context.Filmek.Include(h => h.Termek).ThenInclude(ho => ho.Szekek).Include(h => h.Szineszek).ToListAsync();
             return Ok(filmek);
         }
 
@@ -26,7 +26,7 @@ namespace Mozi.Server.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Film>> GetSingleFilm(int id)
         {
-            var film=await _context.Filmek.Include(h=>h.Termek).Include(h=>h.Szineszek).FirstOrDefaultAsync(h=>h.Id==id);
+            var film=await _context.Filmek.Include(h=>h.Termek).ThenInclude(ho => ho.Szekek).Include(h=>h.Szineszek).FirstOrDefaultAsync(h=>h.Id==id);
             if (film == null)
             {
                 return NotFound("Bocsi, nincs itt film");
@@ -37,14 +37,25 @@ namespace Mozi.Server.Controllers
         [HttpGet("{id}/termek")]
         public async Task<ActionResult<Terem>> GetFilmTermek(int id)
         {
-            var termek = await _context.Termek.Where(h=>h.FilmId==id).ToListAsync();
+            var film = await _context.Filmek.Include(h => h.Termek).ThenInclude(ho => ho.Szekek).Include(h => h.Szineszek).FirstOrDefaultAsync(h => h.Id == id);
+            if (film == null)
+            {
+                return NotFound("Bocsi, nincs itt film");
+            }
+
+            var termek =film.Termek;
             return Ok(termek);
         }
 
         [HttpGet("{id}/szineszek")]
         public async Task<ActionResult<Szinesz>> GetFilmSzineszek(int id)
         {
-            var termek = await _context.Szineszek.Where(h => h.FilmId == id).ToListAsync();
+            var film = await _context.Filmek.Include(h => h.Termek).Include(h => h.Szineszek).FirstOrDefaultAsync(h => h.Id == id);
+            if (film == null)
+            {
+                return NotFound("Bocsi, nincs itt film");
+            }
+            var termek = film.Szineszek;
             return Ok(termek);
         }
 

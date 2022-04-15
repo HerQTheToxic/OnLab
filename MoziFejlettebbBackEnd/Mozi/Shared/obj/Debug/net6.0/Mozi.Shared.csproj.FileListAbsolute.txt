@@ -1,28 +1,14 @@
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.deps.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.pdb
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.csproj.AssemblyReference.cache
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.AssemblyInfoInputs.cache
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.AssemblyInfo.cs
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.csproj.CoreCompileInputs.cache
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\refint\Mozi.Shared.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.pdb
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\ref\Mozi.Shared.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.runtimeconfig.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.genruntimeconfig.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.deps.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.runtimeconfig.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.pdb
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.csproj.AssemblyReference.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.GeneratedMSBuildEditorConfig.editorconfig
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.AssemblyInfoInputs.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.AssemblyInfo.cs
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.csproj.CoreCompileInputs.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\refint\Mozi.Shared.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.pdb
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.genruntimeconfig.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\Shared\obj\Debug\net6.0\ref\Mozi.Shared.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.deps.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.runtimeconfig.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\bin\Debug\net6.0\Mozi.Shared.pdb
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.csproj.AssemblyReference.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.AssemblyInfoInputs.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.AssemblyInfo.cs
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.csproj.CoreCompileInputs.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\refint\Mozi.Shared.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.pdb
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\Mozi.Shared.genruntimeconfig.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Shared\obj\Debug\net6.0\ref\Mozi.Shared.dll

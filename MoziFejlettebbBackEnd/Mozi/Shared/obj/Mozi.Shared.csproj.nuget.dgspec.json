@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Shared\\Mozi.Shared.csproj": {}
+    "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Shared\\Mozi.Shared.csproj": {}
   },
   "projects": {
-    "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Shared\\Mozi.Shared.csproj": {
+    "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Shared\\Mozi.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Shared\\Mozi.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Shared\\Mozi.Shared.csproj",
         "projectName": "Mozi.Shared",
-        "projectPath": "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Shared\\Mozi.Shared.csproj",
+        "projectPath": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Shared\\Mozi.Shared.csproj",
         "packagesPath": "C:\\Users\\HerQ\\.nuget\\packages\\",
-        "outputPath": "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HerQ\\AppData\\Roaming\\NuGet\\NuGet.Config",

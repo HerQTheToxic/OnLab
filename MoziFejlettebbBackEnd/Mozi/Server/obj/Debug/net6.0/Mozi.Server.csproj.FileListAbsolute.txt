@@ -1,170 +1,85 @@
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Client.staticwebassets.runtime.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\appsettings.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\BrowserDebugHost.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\BrowserDebugProxy.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\Newtonsoft.Json.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Server.staticwebassets.runtime.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Server.exe
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Server.deps.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Server.runtimeconfig.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Server.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Server.pdb
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.JSInterop.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\System.IO.Pipelines.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Client.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Shared.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Client.pdb
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Mozi.Shared.pdb
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.csproj.AssemblyReference.cache
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.AssemblyInfoInputs.cache
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.AssemblyInfo.cs
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.csproj.CoreCompileInputs.cache
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.RazorAssemblyInfo.cache
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.RazorAssemblyInfo.cs
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\scopedcss\bundle\Mozi.Server.styles.css
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.csproj.CopyComplete
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\refint\Mozi.Server.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.pdb
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\Mozi.Server.genruntimeconfig.cache
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\obj\Debug\net6.0\ref\Mozi.Server.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.Identity.Client.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\System.Drawing.Common.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\System.Runtime.Caching.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\System.Security.Permissions.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\System.Windows.Extensions.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Humanizer.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Syncfusion.Blazor.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Syncfusion.ExcelExport.Net.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Syncfusion.Licensing.dll
-C:\Users\HerQ\Documents\GitHub\OnLab\Mozi\Mozi\Server\bin\Debug\net6.0\Syncfusion.PdfExport.Net.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\appsettings.Development.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\appsettings.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\BlazorDebugProxy\BrowserDebugHost.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\BlazorDebugProxy\BrowserDebugProxy.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\BlazorDebugProxy\Newtonsoft.Json.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Client.staticwebassets.runtime.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Server.staticwebassets.runtime.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Server.exe
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Server.deps.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Server.runtimeconfig.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Server.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Server.pdb
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Humanizer.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.Identity.Client.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.JSInterop.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Newtonsoft.Json.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Syncfusion.Blazor.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Syncfusion.ExcelExport.Net.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Syncfusion.Licensing.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Syncfusion.PdfExport.Net.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\System.Drawing.Common.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\System.IO.Pipelines.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\System.Runtime.Caching.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\System.Security.Permissions.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\System.Windows.Extensions.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Client.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Shared.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Client.pdb
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\bin\Debug\net6.0\Mozi.Shared.pdb
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.csproj.AssemblyReference.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.GeneratedMSBuildEditorConfig.editorconfig
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.AssemblyInfoInputs.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.AssemblyInfo.cs
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.csproj.CoreCompileInputs.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.MvcApplicationPartsAssemblyInfo.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.RazorAssemblyInfo.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.RazorAssemblyInfo.cs
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\staticwebassets.build.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\staticwebassets.development.json
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\scopedcss\bundle\Mozi.Server.styles.css
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.csproj.CopyComplete
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\refint\Mozi.Server.dll
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.pdb
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\Mozi.Server.genruntimeconfig.cache
-E:\A A A A A NET UJ Backend\Mozi\Mozi\server\obj\Debug\net6.0\ref\Mozi.Server.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Client.staticwebassets.runtime.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\appsettings.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\BrowserDebugHost.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\BrowserDebugProxy.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Server.staticwebassets.runtime.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Server.exe
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Server.deps.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Server.runtimeconfig.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Server.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Server.pdb
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Humanizer.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Syncfusion.Blazor.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Syncfusion.ExcelExport.Net.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Syncfusion.Licensing.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Syncfusion.PdfExport.Net.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Client.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Shared.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Client.pdb
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\bin\Debug\net6.0\Mozi.Shared.pdb
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.csproj.AssemblyReference.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.AssemblyInfoInputs.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.AssemblyInfo.cs
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.csproj.CoreCompileInputs.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.RazorAssemblyInfo.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.RazorAssemblyInfo.cs
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\scopedcss\bundle\Mozi.Server.styles.css
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.csproj.CopyComplete
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\refint\Mozi.Server.dll
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.pdb
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\Mozi.Server.genruntimeconfig.cache
+C:\Users\HerQ\Documents\GitHub\OnLab\MoziFejlettebbBackEnd\Mozi\Server\obj\Debug\net6.0\ref\Mozi.Server.dll

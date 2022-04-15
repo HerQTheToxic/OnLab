@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LxIA6o2C24Uak2WbxDr543UJW3z8hjs0aX0m15BTbfoEX/17c6dDwnU0lnEejztnXcq+2PK6rMrZ20IjJghwhg==",
+  "dgSpecHash": "m5u1zAGkfDHSoFIB0zGZn68dmj6PSgOWoVL21wiIUQZ4RW6/K4uohx8O0+ps+WvzZ9pJF3qBboEonK7M2r7mtQ==",
   "success": true,
-  "projectFilePath": "E:\\A A A A A NET UJ Backend\\Mozi\\Mozi\\Shared\\Mozi.Shared.csproj",
+  "projectFilePath": "C:\\Users\\HerQ\\Documents\\GitHub\\OnLab\\MoziFejlettebbBackEnd\\Mozi\\Shared\\Mozi.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HerQ\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\HerQ\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",

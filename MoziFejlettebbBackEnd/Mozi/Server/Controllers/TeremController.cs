@@ -17,14 +17,14 @@ namespace Mozi.Server.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Terem>>> GetTermek()
         {
-            var termek= await _context.Termek.ToListAsync();
+            var termek= await _context.Termek.Include(h => h.Szekek).ToListAsync();
             return Ok(termek);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Terem>> GetSingleTerem(int id)
         {
-            var terem = await _context.Termek.FirstOrDefaultAsync(h => h.Id == id);
+            var terem = await _context.Termek.Include(h => h.Szekek).FirstOrDefaultAsync(h => h.Id == id);
             if (terem == null)
             {
                 return NotFound("Bocsi, nincs itt terem");
@@ -36,7 +36,12 @@ namespace Mozi.Server.Controllers
         [HttpGet("{id}/szekek")]
         public async Task<ActionResult<Szek>> GetTeremSzekek(int id)
         {
-            var szekek = await _context.Szekek.Where(h => h.TeremId == id).ToListAsync();
+            var terem = await _context.Termek.Include(h => h.Szekek).FirstOrDefaultAsync(h => h.Id == id);
+            if (terem == null)
+            {
+                return NotFound("Bocsi, nincs itt terem");
+            }
+            var szekek = terem.Szekek;
             return Ok(szekek);
         }
 
