@@ -8,6 +8,7 @@
 @using Syncfusion.Blazor.Grids;
 @using Syncfusion.Blazor.Buttons;
 
+<div class="padding">
 @if (Id == null)
 {
     <h3>Uj film</h3>
@@ -16,25 +17,6 @@ else
 {
     <h3>A(z) @film.Nev adatai</h3>
 }
-<div class="padding">
-<table class="table">
-    <thead>
-        <tr>
-            <th>Név</th>
-            <th>Értékelés</th>
-            <th>Gyártó</th>
-        </tr>
-    </thead>
-    <tbody>
-              
-           <tr>
-               <td>@film.Nev</td>
-               <td>@film.Ertekeles</td>
-               <td>@film.Gyarto</td>
-           </tr>
-           
-    </tbody>
-</table>
 
 <SfGrid DataSource="@termeklista" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
     <GridPageSettings PageSize="5"></GridPageSettings>
@@ -55,6 +37,26 @@ else
 </SfGrid>
 
 
+<SfGrid DataSource="@szineszlista" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
+    <GridPageSettings PageSize="5"></GridPageSettings>
+
+    <GridColumns>
+        <GridColumn Field=@nameof(Szinesz.Nev) HeaderText="Név"  Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Szinesz.Kor) HeaderText="Kor"  Width="120"></GridColumn>                   
+        <GridColumn Field=@nameof(Szinesz.Ertekeles) HeaderText="Értékelés"  Width="120"></GridColumn>                   
+        <GridColumn HeaderText="Szinész Info" TextAlign="TextAlign.Center" Width="120">
+            <Template>
+                @{
+                    var szinesz = (context as Szinesz);   
+                    <button class="btn btn-primary" @onclick="(()=>ShowSzinesz(szinesz.Id))">Info</button>
+                }
+            </Template>
+        </GridColumn>
+    </GridColumns>
+    
+</SfGrid>
+
+
 
 
 <button class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</button>
@@ -66,13 +68,16 @@ else
 
 
     public List<Terem> termeklista { get; set; }
+    public List<Szinesz> szineszlista { get; set; }
 
     Mozi.Shared.Film film=new Mozi.Shared.Film();
 
     protected override async Task OnInitializedAsync()
     {
         await FilmService.GetFilmTermek((int)Id);
+        await FilmService.GetFilmSzineszek((int)Id);
         termeklista = FilmService.Termek;
+        szineszlista = FilmService.Szineszek;
     }
 
     protected override async Task OnParametersSetAsync()
@@ -81,6 +86,7 @@ else
         {
             film = await FilmService.GetSingleFilm((int)Id);
             termeklista = FilmService.Termek;
+
 
         }
     }
@@ -92,6 +98,10 @@ else
     void ShowTerem(int id)
     {
         NavigationManager.NavigateTo($"terem/{id}");    
+    }
+    void ShowSzinesz(int id)
+    {
+        NavigationManager.NavigateTo($"szinesz/{id}");    
     }
 
 
