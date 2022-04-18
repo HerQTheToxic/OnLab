@@ -2,6 +2,11 @@
 @page "/film/{id:int}"
 @inject IFilmService FilmService
 @inject NavigationManager NavigationManager
+@inject ITeremService TeremService
+@inject ISzekService SzekService
+@inject ISzineszService SzineszService
+@using Syncfusion.Blazor.Grids;
+@using Syncfusion.Blazor.Buttons;
 
 @if (Id == null)
 {
@@ -11,14 +16,13 @@ else
 {
     <h3>A(z) @film.Nev adatai</h3>
 }
-
+<div class="padding">
 <table class="table">
     <thead>
         <tr>
             <th>Név</th>
             <th>Értékelés</th>
             <th>Gyártó</th>
-            <th>Terem</th>
         </tr>
     </thead>
     <tbody>
@@ -32,29 +36,74 @@ else
     </tbody>
 </table>
 
+<SfGrid DataSource="@termeklista" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
+    <GridPageSettings PageSize="5"></GridPageSettings>
+
+    <GridColumns>
+        <GridColumn Field=@nameof(Terem.Id) HeaderText="Terem száma"  Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Terem.TeremNev) HeaderText="Terem Neve"  Width="120"></GridColumn>                   
+        <GridColumn HeaderText="Terem Info" TextAlign="TextAlign.Center" Width="120">
+            <Template>
+                @{
+                    var terem = (context as Terem);   
+                    <button class="btn btn-primary" @onclick="(()=>ShowTerem(terem.Id))">Info</button>
+                }
+            </Template>
+        </GridColumn>
+    </GridColumns>
+    
+</SfGrid>
+
 
 
 
 <button class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</button>
-
+</div>
 
 @code {
     [Parameter]
     public int? Id{ get; set; }
 
+
+    public List<Terem> termeklista { get; set; }
+
     Mozi.Shared.Film film=new Mozi.Shared.Film();
-    
+
+    protected override async Task OnInitializedAsync()
+    {
+        await FilmService.GetFilmek();
+        await FilmService.GetFilmTermek((int)Id);
+        termeklista = FilmService.Termek;
+    }
+
     protected override async Task OnParametersSetAsync()
     {
         if(Id!= null)
         {
             film = await FilmService.GetSingleFilm((int)Id);
+            termeklista = FilmService.Termek;
+
         }
     }
     void ShowFilmek()
     {
-        NavigationManager.NavigateTo("filmek");    
+        NavigationManager.NavigateTo("filmek");   
+    }
+
+    void ShowTerem(int id)
+    {
+        NavigationManager.NavigateTo($"terem/{id}");    
     }
 
 
+
 }
+
+<style>
+.padding {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+</style>

@@ -32,6 +32,7 @@
     
 </SfGrid>
 
+
 </div>
 <table class="table table-striped">
     <thead>
@@ -149,10 +150,12 @@
     protected override async Task OnInitializedAsync()
     {
         await FilmService.GetFilmek();
+        //await FilmService.GetFilmTermek(2);
         await SzineszService.GetSzineszek();
         await SzekService.GetSzekek();
         await TeremService.GetTermek();
         tablazatFilmek = FilmService.Filmek;
+        //tablazatTermek = FilmService.Termek;
     }
 
     void ShowFilm(int id)
@@ -174,8 +177,8 @@
 
     //elso tablazatnak az adatai
     public List<Film> tablazatFilmek { get; set; }
+    public List<Terem> tablazatTermek { get; set; }
 }
--->
 
 <style>
 .padding {

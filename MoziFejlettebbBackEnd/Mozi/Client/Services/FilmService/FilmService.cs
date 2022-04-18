@@ -11,8 +11,8 @@ namespace Mozi.Client.Services.FilmService
             _http = http;
         }
         public List<Film> Filmek { get ; set ;} =new List<Film> ();
-        public List<Terem> Termek { get ; set; }
-        public List<Szinesz> Szineszek { get ; set; }
+        public List<Terem> Termek { get ; set; } = new List<Terem>();
+        public List<Szinesz> Szineszek { get ; set; } = new List<Szinesz>();
 
         public async Task CreateFilm(Film film)
         {
