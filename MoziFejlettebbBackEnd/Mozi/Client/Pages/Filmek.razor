@@ -6,6 +6,9 @@
 @inject ISzineszService SzineszService
 @using Syncfusion.Blazor.Grids;
 @using Syncfusion.Blazor.Buttons;
+@using System.ComponentModel.DataAnnotations;
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Data
 
 <div class="padding">
 <PageTitle>Filmek</PageTitle>
@@ -13,7 +16,7 @@
 <h3>Filmek</h3>
 
 
-<SfGrid DataSource="@tablazatFilmek" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
+<SfGrid @ref="Grid" DataSource="@tablazatFilmek" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
     <GridPageSettings PageSize="5"></GridPageSettings>
 
     <GridColumns>
@@ -33,7 +36,28 @@
 </SfGrid>
 
 
-</div>
+ <EditForm Model="@seged" OnValidSubmit="FormValidSubmit">
+     <DataAnnotationsValidator />
+     <ValidationSummary />
+     <div class="form-group">
+         <label for="nev">Film neve:</label>
+         <SfTextBox ID="nev" @bind-Value="seged.Nev"></SfTextBox>
+     </div>
+     <div class="form-group">
+         <label for="ertekeles">Film értékelése:</label>
+         <SfNumericTextBox ID="ertekeles" @bind-Value="seged.Ertekeles"></SfNumericTextBox>
+     </div>
+     <div class="form-group">
+         <label for="gyarto">Film gyártója:</label>
+         <SfTextBox ID="gyarto" @bind-Value="seged.Gyarto"></SfTextBox>
+     </div>
+     <SfButton>Submit</SfButton>
+ </EditForm>
+
+
+</div
+<!--
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -144,7 +168,7 @@
     </tbody>
 </table>
 
-
+-->
 
 @code {
     protected override async Task OnInitializedAsync()
@@ -178,6 +202,49 @@
     //elso tablazatnak az adatai
     public List<Film> tablazatFilmek { get; set; }
     public List<Terem> tablazatTermek { get; set; }
+
+    SfGrid<Film> Grid{ get; set; }
+
+    //Validáció
+
+    private segedFilm seged = new segedFilm();
+
+    public class segedFilm
+    {
+        [Required(ErrorMessage = "Kérlek add meg a film nevét.")]
+        public string Nev { get; set; }
+
+        [Required(ErrorMessage = "Kérlek add meg a film értékelését. (0-10-ig)")]
+        [Range(0, 10.0)]
+        public double Ertekeles { get; set; }
+
+        [Required(ErrorMessage = "Kérlek add meg a film gyártóját")]
+        public string Gyarto { get; set; }
+
+    }
+
+    private async void FormValidSubmit(EditContext context)
+    {
+        Film segedfilm = new Film();
+        segedfilm.Nev = seged.Nev;
+        segedfilm.Ertekeles = seged.Ertekeles;
+        segedfilm.Gyarto = seged.Gyarto;
+
+        FilmService.CreateFilm(segedfilm);
+
+        await FilmService.GetFilmek();
+        tablazatFilmek = FilmService.Filmek;
+        refresh();
+    } 
+
+    private void refresh()
+    {
+        Grid.Refresh();
+    }
+
+
+
+
 }
 
 <style>
