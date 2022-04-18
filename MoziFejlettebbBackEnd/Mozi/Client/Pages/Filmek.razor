@@ -13,9 +13,10 @@
 <div class="padding">
 <PageTitle>Filmek</PageTitle>
 
-<h3>Filmek</h3>
 
 
+<div class="padding">
+    <h2>Filmek</h2>
 <SfGrid @ref="Grid" DataSource="@tablazatFilmek" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
     <GridPageSettings PageSize="5"></GridPageSettings>
 
@@ -32,9 +33,11 @@
             </Template>
         </GridColumn>
     </GridColumns>
-    
 </SfGrid>
+</div>
 
+<div class="padding">
+<h3>Film hozzáadása</h3>
 
  <EditForm Model="@seged" OnValidSubmit="FormValidSubmit">
      <DataAnnotationsValidator />
@@ -54,7 +57,7 @@
      <SfButton>Submit</SfButton>
  </EditForm>
 
-
+ </div>
 </div
 <!--
 
@@ -181,6 +184,19 @@
         tablazatFilmek = FilmService.Filmek;
         //tablazatTermek = FilmService.Termek;
     }
+    protected override async Task OnParametersSetAsync()
+    {
+
+        await FilmService.GetFilmek();
+        //await FilmService.GetFilmTermek(2);
+        await SzineszService.GetSzineszek();
+        await SzekService.GetSzekek();
+        await TeremService.GetTermek();
+        tablazatFilmek = FilmService.Filmek;
+        //tablazatTermek = FilmService.Termek;
+
+
+    }
 
     void ShowFilm(int id)
     {
@@ -232,8 +248,7 @@
 
         FilmService.CreateFilm(segedfilm);
 
-        await FilmService.GetFilmek();
-        tablazatFilmek = FilmService.Filmek;
+
         refresh();
     } 
 
@@ -241,8 +256,6 @@
     {
         Grid.Refresh();
     }
-
-
 
 
 }

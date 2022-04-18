@@ -7,17 +7,21 @@
 @inject ISzineszService SzineszService
 @using Syncfusion.Blazor.Grids;
 @using Syncfusion.Blazor.Buttons;
+@using System.ComponentModel.DataAnnotations;
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Data
 
 <div class="padding">
 @if (Id == null)
 {
-    <h3>Uj film</h3>
+    <h2>Uj film</h2>
 }
 else
 {
-    <h3>A(z) @film.Nev adatai</h3>
+    <h2>A(z) @film.Nev adatai</h2>
 }
-
+<div class="padding">
+<h3>Termek, ahol játszák:</h3>
 <SfGrid DataSource="@termeklista" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
     <GridPageSettings PageSize="5"></GridPageSettings>
 
@@ -35,8 +39,9 @@ else
     </GridColumns>
     
 </SfGrid>
-
-
+</div>
+<div class="padding">
+<h3>Filmben szereplő színészek:</h3>
 <SfGrid DataSource="@szineszlista" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
     <GridPageSettings PageSize="5"></GridPageSettings>
 
@@ -44,22 +49,37 @@ else
         <GridColumn Field=@nameof(Szinesz.Nev) HeaderText="Név"  Width="120"></GridColumn>
         <GridColumn Field=@nameof(Szinesz.Kor) HeaderText="Kor"  Width="120"></GridColumn>                   
         <GridColumn Field=@nameof(Szinesz.Ertekeles) HeaderText="Értékelés"  Width="120"></GridColumn>                   
-        <GridColumn HeaderText="Szinész Info" TextAlign="TextAlign.Center" Width="120">
-            <Template>
-                @{
-                    var szinesz = (context as Szinesz);   
-                    <button class="btn btn-primary" @onclick="(()=>ShowSzinesz(szinesz.Id))">Info</button>
-                }
-            </Template>
-        </GridColumn>
     </GridColumns>
     
 </SfGrid>
+</div>
+<div class="padding">
+<h3>Film szerkesztése</h3>
+
+ <EditForm Model="@seged" OnValidSubmit="FormValidSubmit">
+     <DataAnnotationsValidator />
+     <ValidationSummary />
+     <div class="form-group">
+         <label for="nev">Film neve:</label>
+         <SfTextBox ID="nev" @bind-Value="seged.Nev"></SfTextBox>
+     </div>
+     <div class="form-group">
+         <label for="ertekeles">Film értékelése:</label>
+         <SfNumericTextBox ID="ertekeles" @bind-Value="seged.Ertekeles"></SfNumericTextBox>
+     </div>
+     <div class="form-group">
+         <label for="gyarto">Film gyártója:</label>
+         <SfTextBox ID="gyarto" @bind-Value="seged.Gyarto"></SfTextBox>
+     </div>
+     <SfButton>Submit</SfButton>
+     <SfButton class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</SfButton>
+    <SfButton class="btn btn-danger" @onclick="(()=>DeleteFilm((int)Id))">Film törlése</SfButton>
+ </EditForm>
 
 
 
+</div>
 
-<button class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</button>
 </div>
 
 @code {
@@ -103,6 +123,42 @@ else
     {
         NavigationManager.NavigateTo($"szinesz/{id}");    
     }
+    void DeleteFilm(int id)
+    {
+        FilmService.DeleteFilm(id);
+        NavigationManager.NavigateTo("filmek");
+    }
+
+    //film szerkesztese
+    private segedFilm seged = new segedFilm();
+    public class segedFilm
+    {
+        [Required(ErrorMessage = "Kérlek add meg a film nevét.")]
+        public string Nev { get; set; }
+
+        [Required(ErrorMessage = "Kérlek add meg a film értékelését. (0-10-ig)")]
+        [Range(0, 10.0)]
+        public double Ertekeles { get; set; }
+
+        [Required(ErrorMessage = "Kérlek add meg a film gyártóját")]
+        public string Gyarto { get; set; }
+
+    }
+
+    private async void FormValidSubmit(EditContext context)
+    {
+        Film segedfilm = new Film();
+        segedfilm.Id = (int)Id;
+        segedfilm.Nev = seged.Nev;
+        segedfilm.Ertekeles = seged.Ertekeles;
+        segedfilm.Gyarto = seged.Gyarto;
+
+        FilmService.UpdateFilm(segedfilm);
+        FilmService.GetFilmek();
+
+        NavigationManager.NavigateTo("filmek"); 
+
+    } 
 
 
 

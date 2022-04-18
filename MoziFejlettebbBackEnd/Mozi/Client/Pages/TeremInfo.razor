@@ -4,9 +4,12 @@
 @inject NavigationManager NavigationManager
 @using Syncfusion.Blazor.Grids;
 @using Syncfusion.Blazor.Buttons;
+@using System.ComponentModel.DataAnnotations;
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Data
 
 <div class="padding">
-
+    <div class="padding">
 @if (Id == null)
 {
     <h3>Uj terem</h3>
@@ -42,11 +45,26 @@ else
     
 </SfGrid>
 
+<h3>Teremben lejátszott film szerkesztése:</h3>
+
+ <EditForm Model="@segedTer" OnValidSubmit="FormValidSubmit">
+     <DataAnnotationsValidator />
+     <ValidationSummary />
+
+     <div class="form-group">
+         <label for="Teremid">Film ID:</label>
+         <SfNumericTextBox ID="Teremid" @bind-Value="segedTer.Teremid"></SfNumericTextBox>
+     </div>
+ 
+     <SfButton>Submit</SfButton>
+    <SfButton class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</SfButton>
+    <SfButton class="btn btn-primary" @onclick="(()=>ShowSzekek(terem.Id))">Terem fogalaltsága</SfButton>
+ </EditForm>
 
 
-<button class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</button>
-<button class="btn btn-primary" @onclick="(()=>ShowSzekek(terem.Id))">Terem fogalaltsága</button>
 
+
+</div>
 </div>
 
 @code {
@@ -56,6 +74,7 @@ else
     SfGrid<Szek> Grid{ get; set; }
     Mozi.Shared.Terem terem=new Mozi.Shared.Terem();
     public List<Szek> szeklista { get; set; }
+
 
 
     protected override async Task OnParametersSetAsync()
@@ -81,6 +100,27 @@ else
         szek.Foglalt = !szek.Foglalt;
         TeremService.UpdateTeremSzek(szek);
         Grid.Refresh();
+    }
+
+
+
+    segedTerem segedTer = new segedTerem();
+    public class segedTerem
+    {
+        [Required(ErrorMessage = "Kérlek add meg a film ID-ját, amit ebben a teremben szeretnél lejátszani. (0-10-ig)")]
+        public int Teremid { get; set; }
+    }
+
+    private async void FormValidSubmit(EditContext context)
+    {
+        Terem segedTerem = new Terem();
+        System.Diagnostics.Debug.WriteLine(terem.Id);
+        segedTerem.Id = terem.Id;
+        segedTerem.TeremNev = terem.TeremNev;
+        segedTerem.FilmId = segedTer.Teremid;
+        TeremService.UpdateTerem(segedTerem);
+        NavigationManager.NavigateTo("filmek");
+
     }
 
 }

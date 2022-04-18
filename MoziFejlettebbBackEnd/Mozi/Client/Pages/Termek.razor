@@ -1,0 +1,60 @@
+﻿@page "/termek"
+@inject NavigationManager NavigationManager
+@inject ITeremService TeremService
+@using Syncfusion.Blazor.Grids;
+@using Syncfusion.Blazor.Buttons;
+@using System.ComponentModel.DataAnnotations;
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Data
+
+<div class="padding">
+<PageTitle>Termek</PageTitle>
+
+<div class="padding">
+    <h2>Termek</h2>
+<SfGrid DataSource="@termeklista" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
+    <GridPageSettings PageSize="5"></GridPageSettings>
+
+    <GridColumns>
+        <GridColumn Field=@nameof(Terem.Id) HeaderText="Terem száma"  Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Terem.TeremNev) HeaderText="Terem Neve"  Width="120"></GridColumn>                   
+        <GridColumn HeaderText="Terem Info" TextAlign="TextAlign.Center" Width="120">
+            <Template>
+                @{
+                    var terem = (context as Terem);   
+                    <button class="btn btn-primary" @onclick="(()=>ShowTerem(terem.Id))">Info</button>
+                }
+            </Template>
+        </GridColumn>
+    </GridColumns>
+    
+</SfGrid>
+</div>
+</div>
+
+@code {
+    protected override async Task OnParametersSetAsync()
+    {
+
+        await TeremService.GetTermek();
+        termeklista = TeremService.Termek;
+
+
+    }
+    public List<Terem> termeklista { get; set; }
+
+    void ShowTerem(int id)
+    {
+        NavigationManager.NavigateTo($"terem/{id}");    
+    }
+}
+
+
+<style>
+.padding {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+</style>

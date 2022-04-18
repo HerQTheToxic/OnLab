@@ -69,7 +69,7 @@ namespace Mozi.Client.Services.TeremService
 
         public async Task UpdateTerem(Terem terem)
         {
-            var result = await _http.PutAsJsonAsync($"api/film/{terem.Id}", terem);
+            var result = await _http.PutAsJsonAsync($"api/terem/{terem.Id}", terem);
             var response = await result.Content.ReadFromJsonAsync<List<Terem>>();
             Termek = response;
         }
