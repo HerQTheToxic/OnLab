@@ -4,11 +4,35 @@
 @inject ITeremService TeremService
 @inject ISzekService SzekService
 @inject ISzineszService SzineszService
+@using Syncfusion.Blazor.Grids;
+@using Syncfusion.Blazor.Buttons;
+
 
 <PageTitle>Filmek</PageTitle>
 
 <h3>Filmek</h3>
+<div class="padding">
 
+<SfGrid DataSource="@tablazatFilmek" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
+    <GridPageSettings PageSize="5"></GridPageSettings>
+
+    <GridColumns>
+        <GridColumn Field=@nameof(Film.Nev) HeaderText="Film neve"  Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Film.Gyarto) HeaderText="Film gyartó"  Width="120"></GridColumn>                   
+        <GridColumn Field=@nameof(Film.Ertekeles) HeaderText="Értékelés" Width="120"></GridColumn>
+        <GridColumn HeaderText="Info" TextAlign="TextAlign.Center" Width="120">
+            <Template>
+                @{
+                    var film = (context as Film);   
+                    <button class="btn btn-primary" @onclick="(()=>ShowFilm(film.Id))">Info</button>
+                }
+            </Template>
+        </GridColumn>
+    </GridColumns>
+    
+</SfGrid>
+
+</div>
 <table class="table table-striped">
     <thead>
         <tr>
@@ -128,6 +152,7 @@
         await SzineszService.GetSzineszek();
         await SzekService.GetSzekek();
         await TeremService.GetTermek();
+        tablazatFilmek = FilmService.Filmek;
     }
 
     void ShowFilm(int id)
@@ -146,4 +171,17 @@
     {
         NavigationManager.NavigateTo($"terem/{id}");    
     }
+
+    //elso tablazatnak az adatai
+    public List<Film> tablazatFilmek { get; set; }
 }
+-->
+
+<style>
+.padding {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+</style>
