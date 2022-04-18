@@ -73,5 +73,12 @@ namespace Mozi.Client.Services.TeremService
             var response = await result.Content.ReadFromJsonAsync<List<Terem>>();
             Termek = response;
         }
+
+        public async Task UpdateTeremSzek(Szek szek)
+        { 
+            var result = await _http.PutAsJsonAsync($"api/szek/{szek.Id}", szek);
+            var response = await result.Content.ReadFromJsonAsync<List<Szek>>();
+            Szekek = response;
+        }
     }
 }

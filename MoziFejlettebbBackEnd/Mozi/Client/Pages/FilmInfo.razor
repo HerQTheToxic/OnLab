@@ -71,7 +71,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        await FilmService.GetFilmek();
         await FilmService.GetFilmTermek((int)Id);
         termeklista = FilmService.Termek;
     }

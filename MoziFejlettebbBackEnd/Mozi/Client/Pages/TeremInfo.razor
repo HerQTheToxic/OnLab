@@ -2,6 +2,10 @@
 @page "/terem/{id:int}"
 @inject ITeremService TeremService
 @inject NavigationManager NavigationManager
+@using Syncfusion.Blazor.Grids;
+@using Syncfusion.Blazor.Buttons;
+
+<div class="padding">
 
 @if (Id == null)
 {
@@ -9,47 +13,57 @@
 }
 else
 {
-    <h3>A(z) @terem.TeremNev adatai</h3>
+    <h3>A(z) @terem.TeremNev terem székei</h3>
 }
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nev</th>
-            <th>FilmId</th>
-            <th>id</th>
-        </tr>
-    </thead>
-    <tbody>
-              
-           <tr>
-               <td>@terem.TeremNev</td>
-               <td>@terem.FilmId</td>
-               <td>@terem.Id</td>
-               
-           </tr>
-           
-    </tbody>
-</table>
+<SfGrid @ref="Grid" DataSource="@szeklista" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
+    <GridPageSettings PageSize="5"></GridPageSettings>
 
+    <GridColumns>
+        <GridColumn Field=@nameof(Szek.Szam) HeaderText="Szék száma"  Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Szek.Foglalt) HeaderText="Foglalt?"  Width="120"></GridColumn>                   
+        <GridColumn HeaderText="" TextAlign="TextAlign.Center" Width="120">
+            <Template>
+                @{
+                    var szek = (context as Szek);   
+                    
+                    @if(szek.Foglalt){
+                        <button class="btn btn-danger" @onclick="(()=>Foglal(szek))">Foglalás törlése</button>
+                    }
+                    else{
+                        <button class="btn btn-primary" @onclick="(()=>Foglal(szek))">Foglal</button>
+                    }
+
+
+                }
+            </Template>
+        </GridColumn>
+    </GridColumns>
+    
+</SfGrid>
 
 
 
 <button class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</button>
 <button class="btn btn-primary" @onclick="(()=>ShowSzekek(terem.Id))">Terem fogalaltsága</button>
 
+</div>
 
 @code {
     [Parameter]
     public int? Id{ get; set; }
 
+    SfGrid<Szek> Grid{ get; set; }
     Mozi.Shared.Terem terem=new Mozi.Shared.Terem();
-    
+    public List<Szek> szeklista { get; set; }
+
 
     protected override async Task OnParametersSetAsync()
     {
         if(Id!= null)
         {
+            await TeremService.GetTeremSzekek((int)Id);
+            szeklista = TeremService.Szekek;
             terem = await TeremService.GetSingleTerem((int)Id);
 
         }
@@ -62,7 +76,20 @@ else
     {
         NavigationManager.NavigateTo($"terem/{id}/szekek");    
     }
-
-
+    void Foglal(Szek szek)
+    {
+        szek.Foglalt = !szek.Foglalt;
+        TeremService.UpdateTeremSzek(szek);
+        Grid.Refresh();
+    }
 
 }
+
+<style>
+.padding {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+</style>

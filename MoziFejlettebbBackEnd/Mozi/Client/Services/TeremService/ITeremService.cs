@@ -13,5 +13,6 @@
         Task DeleteTerem(int id);
         Task UpdateTerem(Terem terem);
         Task GetTeremSzekek(int id);
+        Task UpdateTeremSzek(Szek szek );
     }
 }
