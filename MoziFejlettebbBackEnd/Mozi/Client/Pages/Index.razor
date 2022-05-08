@@ -1,36 +1,64 @@
 ﻿@page "/"
-@using Syncfusion.Blazor.Inputs
-@using System.ComponentModel.DataAnnotations;
-<!--
+@using Syncfusion.Blazor.Popups
+@using Syncfusion.Blazor.Buttons  
 
+<SfTooltip Target="#btn" >
+    <TooltipTemplates>
+        <Content>
+            <div id='democontent'>
+                <div class='info'>
+                    <h3 style='margin-top:10px'>Eastern Bluebird</h3>
+                    <div>
+                        <div style='float:left;width:57%'>
+                            The<a href='https://en.wikipedia.org/wiki/Eastern_bluebird' target='blank'> Eastern Bluebird</a>
+                            is easily found in open fields and sparse woodland areas, including along woodland edges.These are<i>cavity-nesting birds</i>and a pair of eastern bluebirds will raise 2-3 broods annually, with 2-8 light blue or whitish eggs per brood.
+                        </div>
+                        <div id='bird'><img src='https://w.wallhaven.cc/full/13/wallhaven-13x3jv.jpg' width='125' height='125' /></div>
+                    </div>
+                    <div style="clear:both">
+                        <p> Eastern bluebirds can be very vocal in flocks. Their calls include a rapid, mid-tone chatter and several long dropping pitch calls.</p>
+                    </div>
+                </div>
+            </div>
+        </Content>
+    </TooltipTemplates>
+    <SfButton ID="btn" Content="Show Tooltip"></SfButton>
+</SfTooltip>
 
- <EditForm Model="@employeeModel">
-     <DataAnnotationsValidator />
-     <ValidationSummary />
-     <div class="form-group">
-         <label for="first-name">First Name:</label>
-         <SfTextBox ID="first-name" @bind-Value="employeeModel.FirstName"></SfTextBox>
-     </div>
-     <div class="form-group">
-         <label for="last-name">Last Name:</label>
-         <SfTextBox ID="last-name" @bind-Value="employeeModel.LastName"></SfTextBox>
-     </div>
-     <SfButton>Submit</SfButton>
- </EditForm>
+<SfTooltip ID="tooltip" IsSticky="true" Target="#target" Content="@Content">
+    <div id='container'>
+        <p>
+            A green home is a type of house designed to be
+            <a id="target">
+                <u>environmentally friendly</u>
+            </a> and sustainable. And also focuses on the efficient use of "energy, water, and building materials." As green homes
+            have become more prevalent we have also seen the emergence of green affordable housing.
+        </p>
+    </div>
+</SfTooltip>
 
+<style>
+    #btn {
+        width: 130px;
+        margin: 30px auto;
+    }
+    #democontent {
+        border: 0.5px solid grey;
+    }
+    #bird {
+        padding-top: 4px;
+        float: right;
+        width: 42%;
+    }
+    #democontent .info a {
+        color: #2FA1E3;
+    }
+    #democontent .info {
+        padding: 0px 12px 0px 5px;
+    }
+</style>
 
-
- -->
- @code {
-     private EmployeeDetails employeeModel = new EmployeeDetails();
-
-     public class EmployeeDetails
-     {
-         [Required(ErrorMessage = "Please enter {0}.")]
-         public string FirstName { get; set; }
-
-         [Required(ErrorMessage = "Please enter {0}.")]
-         public string LastName { get; set; }
-
-     }
- }
+@code
+{
+    string Content = "<div><b>Environmentally friendly</b> or environment-friendly, (also referred to as eco-friendly, nature-friendly, and green) are marketing and sustainability terms referring to goods and services, laws, guidelines and policies that inflict reduced, minimal, or no harm upon ecosystems or the environment.</div>";
+}
