@@ -45,22 +45,6 @@ namespace Mozi.Server.Controllers
             return Ok(szekek);
         }
 
-        /*
-        [HttpGet("{id}/szekek/foglalt")]
-        public async Task<ActionResult<Szek>> GetTeremSzekekFoglalt(int id)
-        {
-            var szekek = await _context.Szekek.Where(h => h.TeremId == id & h.Foglalt==true).ToListAsync();
-            return Ok(szekek);
-        }
-
-        //Teremben lévő székek
-        [HttpGet("{id}/szekek/ures")]
-        public async Task<ActionResult<Szek>> GetTeremSzekekUres(int id)
-        {
-            var szekek = await _context.Szekek.Where(h => h.TeremId == id & h.Foglalt == false).ToListAsync();
-            return Ok(szekek);
-        }
-        */
 
 
         //Letrehoz

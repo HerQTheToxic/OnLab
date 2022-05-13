@@ -9,6 +9,8 @@
 @using System.ComponentModel.DataAnnotations;
 @using Syncfusion.Blazor.Inputs
 @using Syncfusion.Blazor.Data
+@using Syncfusion.Blazor.Popups
+@using Syncfusion.Blazor.Buttons  
 
 <div class="padding">
 <PageTitle>Filmek</PageTitle>
@@ -54,124 +56,36 @@
          <label for="gyarto">Film gyártója:</label>
          <SfTextBox ID="gyarto" @bind-Value="seged.Gyarto"></SfTextBox>
      </div>
-     <SfButton>Submit</SfButton>
+     <SfButton ID="btn">Submit</SfButton>
  </EditForm>
 
  </div>
 </div
-<!--
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Név</th>
-            <th>Értékelés</th>
-            <th>Gyártó</th>
-            <th>Terem</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var film in FilmService.Filmek)
-       {
-           <tr>
-               <td>@film.Nev</td>
-               <td>@film.Ertekeles</td>
-               <td>@film.Gyarto</td>
-               <td> <button class="btn btn-primary" @onclick="(()=>ShowFilm(film.Id))">Info</button></td>
-               <td>
-               </td>
-           </tr>     
-       }
-    </tbody>
-</table>
-
-<h3>Szekek</h3>
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>TeremID</th>
-            <th>Szám</th>
-            <th>Foglalt?</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var szek in SzekService.Szekek)
-       {
-           <tr>
-               <td>@szek.TeremId</td>
-               <td>@szek.Szam</td>
-               <td>@szek.Foglalt</td>
-
-               <td><button class="btn btn-primary" @onclick="(()=>ShowSzek(szek.Id))">Info</button> </td>
-               <td>
-                 
-               </td>
-           </tr>     
-       }
-    </tbody>
-</table>
-
-<h3>Szinesz</h3>
-
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Nev</th>
-            <th>Ertekeles</th>
-            <th>Kor?</th>
-            <th>FilmID</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var szinesz in SzineszService.Szineszek)
-       {
-           <tr>
-               <td>@szinesz.Nev</td>
-               <td>@szinesz.Ertekeles</td>
-               <td>@szinesz.Kor</td>
-               <td>@szinesz.FilmId</td>
 
 
-               <td><button class="btn btn-primary" @onclick="(()=>ShowSzinesz(szinesz.Id))">Info</button> </td>
-               <td>
-                 
-               </td>
-           </tr>     
-       }
-    </tbody>
-</table>
+<SfTooltip Target="#btn" >
+    <TooltipTemplates>
+        <Content>
+            <div id='gomb'>
+                <div class='info'>
+                    <h3 style='margin-top:10px'>Film hozzáadása</h3>
+                    <div>
+                        <div style='float:left;width:57%'>
+                            A <a href='https://hu.wikipedia.org/wiki/Film' target='blank'>Filmeket</a>
+                             sok ember szereti
+                        </div>
+                        <div id='bird'><img src='https://budapestflow.b-cdn.net/wp-content/uploads/2016/02/puskin_faninfo.hu_.jpg' width='125' height='125' /></div>
+                    </div>
+                    <div style="clear:both">
+                        <p> Adj hozzá te is egy filmet a sok közé</p>
+                    </div>
+                </div>
+            </div>
+        </Content>
+    </TooltipTemplates>
+</SfTooltip>
 
-<h3>Termek</h3>
 
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Terem nev</th>
-            <th>Terem id</th>
-            <th>Film id</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var terem in TeremService.Termek)
-       {
-           <tr>
-               <td>@terem.TeremNev</td>
-               <td>@terem.Id</td>
-               <td>@terem.FilmId</td>
-               <td> <button class="btn btn-primary" @onclick="(()=>ShowTerem(terem.Id))">Info</button></td>
-               <td>                
-               </td>
-           </tr>     
-       }
-    </tbody>
-</table>
-
--->
 
 @code {
     protected override async Task OnInitializedAsync()
