@@ -86,8 +86,24 @@
 </SfTooltip>
 
 
+<SfTooltip ID="tooltip" IsSticky="true" Target="#target" Content="@Content">
+    <div id='container'>
+        <p>
+            Ez a gomb
+            <a id="target">
+                <u>environmentally friendly</u>
+            </a> mert az elkészítése nem okozott semmilyen kárt sem a környezetben, sem a természetben
+        </p>
+    </div>
+</SfTooltip>
+
+
 
 @code {
+
+
+    string Content = "<div><b>Environmentally friendly</b> or environment-friendly, (also referred to as eco-friendly, nature-friendly, and green) are marketing and sustainability terms referring to goods and services, laws, guidelines and policies that inflict reduced, minimal, or no harm upon ecosystems or the environment.</div>";
+
     protected override async Task OnInitializedAsync()
     {
         await FilmService.GetFilmek();
