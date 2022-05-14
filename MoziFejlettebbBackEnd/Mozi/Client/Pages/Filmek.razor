@@ -19,23 +19,29 @@
 
 <div class="padding">
     <h2>Filmek</h2>
-<SfGrid @ref="Grid" DataSource="@tablazatFilmek" AllowPaging="true" AllowSorting="true" AllowFiltering="true">
-    <GridPageSettings PageSize="5"></GridPageSettings>
+    <div>
+        <label class="showhide" style="padding: 10px 5px 10px 0"> Film neve </label>
+                <SfSwitch ValueChange="@((Syncfusion.Blazor.Buttons.ChangeEventArgs<bool> args) => { change("Film neve", args); })" @bind-Checked="@nyitva" TChecked="bool"></SfSwitch>
 
-    <GridColumns>
-        <GridColumn Field=@nameof(Film.Nev) HeaderText="Film neve"  Width="120"></GridColumn>
-        <GridColumn Field=@nameof(Film.Gyarto) HeaderText="Film gyartó"  Width="120"></GridColumn>                   
-        <GridColumn Field=@nameof(Film.Ertekeles) HeaderText="Értékelés" Width="120"></GridColumn>
-        <GridColumn HeaderText="Info" TextAlign="TextAlign.Center" Width="120">
-            <Template>
-                @{
-                    var film = (context as Film);   
-                    <button class="btn btn-primary" @onclick="(()=>ShowFilm(film.Id))">Info</button>
-                }
-            </Template>
-        </GridColumn>
-    </GridColumns>
-</SfGrid>
+        <SfGrid @ref="Grid" DataSource="@tablazatFilmek" AllowPaging="true" AllowReordering="true" AllowSorting="true" AllowFiltering="true">
+            <GridPageSettings PageSize="5"></GridPageSettings>
+
+            <GridColumns>
+                <GridColumn Field=@nameof(Film.Nev) HeaderText="Film neve"  Width="120"></GridColumn>
+                <GridColumn Field=@nameof(Film.Gyarto) HeaderText="Film gyartó"  Width="120"></GridColumn>                   
+                <GridColumn Field=@nameof(Film.Ertekeles) HeaderText="Értékelés" Width="120"></GridColumn>
+                <GridColumn HeaderText="Info" TextAlign="TextAlign.Center" Width="120">
+                    <Template>
+                        @{
+                            var film = (context as Film);   
+                            <button class="btn btn-primary" @onclick="(()=>ShowFilm(film.Id))">Info</button>
+                        }
+                    </Template>
+                </GridColumn>
+            </GridColumns>
+     </SfGrid>
+    </div>
+
 </div>
 
 <div class="padding">
@@ -185,6 +191,18 @@
     private void refresh()
     {
         Grid.Refresh();
+    }
+
+    Boolean nyitva = true;
+    public void change(string name, Syncfusion.Blazor.Buttons.ChangeEventArgs<bool> args)
+    {
+        if (args.Checked)
+        {
+            this.Grid.ShowColumns(name);
+        }
+        else {
+            this.Grid.HideColumns(name);
+        }
     }
 
 
