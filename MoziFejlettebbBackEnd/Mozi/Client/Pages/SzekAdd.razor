@@ -1,0 +1,91 @@
+﻿@page "/terem/{id:int}/addszek"
+@inject ISzekService SzekService
+@inject NavigationManager NavigationManager
+@using Syncfusion.Blazor.Grids;
+@using Syncfusion.Blazor.Buttons;
+@using System.ComponentModel.DataAnnotations;
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Data
+
+
+<div class="padding">
+  <h3>Szék hozzáadása a teremhez:</h3>
+
+ <EditForm Model="@szekHozzaad" OnValidSubmit="FormValidSubmit">
+     <DataAnnotationsValidator />
+     <ValidationSummary />
+
+     <div class="form-group">
+         <label for="Szam">Szék száma:</label>
+         <SfNumericTextBox ID="Szam" @bind-Value="szekHozzaad.SzekSzama"></SfNumericTextBox>
+     </div>
+ 
+     <SfButton>Submit</SfButton>
+     <SfButton class="btn btn-primary" @onclick="(()=>Back())">Vissza</SfButton>
+ </EditForm>
+        
+</div>
+
+
+@code {
+    [Parameter]
+    public int? Id{ get; set; }
+
+    int TeremId = 1;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if(Id!= null)
+        {
+            TeremId = Id.Value;
+
+        }
+        else
+        {
+            NavigationManager.NavigateTo("filmek"); 
+        }
+    }
+
+    segedSzek szekHozzaad = new segedSzek();
+    public class segedSzek
+    {
+
+        [Required(ErrorMessage = "Kérlek add meg a szék számát, amit ebben a teremben szeretnél létrehozni")]
+        public int SzekSzama { get; set; }
+    }
+
+
+    private async void FormValidSubmit(EditContext context)
+    {
+        Szek segedSzek = new Szek();
+        segedSzek.Szam = szekHozzaad.SzekSzama;
+        segedSzek.Foglalt = false;
+        segedSzek.TeremId = TeremId;
+        await SzekService.CreateSzek(segedSzek);
+        ShowTerem(TeremId);
+
+
+    }
+
+    void ShowTerem(int id)
+    {
+        NavigationManager.NavigateTo($"terem/{id}");    
+    }
+    void Back()
+    {
+        ShowTerem(TeremId);
+    }
+
+}
+
+
+
+
+<style>
+.padding {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+</style>

@@ -30,6 +30,7 @@
                 <GridColumn Field=@nameof(Film.Nev) HeaderText="Film neve"  Width="120"></GridColumn>
                 <GridColumn Field=@nameof(Film.Gyarto) HeaderText="Film gyartó"  Width="120"></GridColumn>                   
                 <GridColumn Field=@nameof(Film.Ertekeles) HeaderText="Értékelés" Width="120"></GridColumn>
+                <GridColumn Field=@nameof(Film.Id) HeaderText="Film id" Width="120"></GridColumn>
                 <GridColumn HeaderText="Info" TextAlign="TextAlign.Center" Width="120">
                     <Template>
                         @{
@@ -65,10 +66,7 @@
      <SfButton ID="btn">Submit</SfButton>
  </EditForm>
 
- </div>
-</div
-
-
+ 
 <SfTooltip Target="#btn" >
     <TooltipTemplates>
         <Content>
@@ -102,6 +100,11 @@
         </p>
     </div>
 </SfTooltip>
+
+ </div>
+</div>
+
+
 
 
 

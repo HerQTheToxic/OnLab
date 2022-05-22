@@ -57,9 +57,15 @@ else
      </div>
  
      <SfButton>Submit</SfButton>
+    <SfButton class="btn btn-primary" @onclick="(()=>AddChair(terem.Id))">Szék hozzáadása</SfButton>
     <SfButton class="btn btn-primary" @onclick="(()=>ShowFilmek())">Vissza</SfButton>
     <SfButton class="btn btn-primary" @onclick="(()=>ShowSzekek(terem.Id))">Terem fogalaltsága</SfButton>
+    <SfButton class="btn btn-primary" @onclick="(()=>DeleteRoom(terem.Id))">Terem törlése</SfButton>
+
  </EditForm>
+
+
+
 
 
 
@@ -101,6 +107,16 @@ else
         TeremService.UpdateTeremSzek(szek);
         Grid.Refresh();
     }
+    void DeleteRoom(int id)
+    {
+        TeremService.DeleteTerem(id);
+        NavigationManager.NavigateTo("termek");
+    }
+
+    void AddChair(int id)
+    {
+        NavigationManager.NavigateTo($"terem/{id}/addszek"); 
+    }
 
 
 
@@ -118,10 +134,12 @@ else
         segedTerem.Id = terem.Id;
         segedTerem.TeremNev = terem.TeremNev;
         segedTerem.FilmId = segedTer.Teremid;
-        TeremService.UpdateTerem(segedTerem);
+        await TeremService.UpdateTerem(segedTerem);
         NavigationManager.NavigateTo("filmek");
 
     }
+
+
 
 }
 
